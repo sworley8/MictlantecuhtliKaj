@@ -11,7 +11,6 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        HealthCircle = GameObject.FindWithTag("Health").GetComponent<Image>();
         curr = maxhealth;
     }
 
@@ -32,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
         {
             if (curr > 0)
             {
-                handleHealth(10);
+                handleHealth(100);
                 Debug.Log("Do something else here");
 
             }
@@ -44,6 +43,11 @@ public class PlayerHealth : MonoBehaviour
         {
             handleHealth(10);
         }
+    }
+
+    public int GetHealth()
+    {
+        return curr;
     }
 
 }

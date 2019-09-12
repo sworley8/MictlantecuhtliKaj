@@ -24,5 +24,9 @@ public class EnemyCollision : MonoBehaviour
             Debug.Log("Do something else here");
             gameObject.SetActive(false);
         }
+        if (collision.gameObject.layer == 8)
+        {
+            Debug.Log("killed by fire");
+        }
     }
 }
