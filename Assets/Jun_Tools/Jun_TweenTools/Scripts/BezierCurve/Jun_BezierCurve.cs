@@ -5,7 +5,11 @@ using UnityEngine;
 public class Jun_BezierCurve : MonoBehaviour 
 {
 
+<<<<<<< HEAD
     [HideInInspector][SerializeField] public List<Jun_BezierPoint> m_bezierPoints = new List<Jun_BezierPoint>();
+=======
+    [HideInInspector][SerializeField] List<Jun_BezierPoint> m_bezierPoints = new List<Jun_BezierPoint>();
+>>>>>>> 0a6f625f3fe2efe45e8620c935aeef0d30129402
 
     public int pointCount{ get { return m_bezierPoints.Count; }}
 
