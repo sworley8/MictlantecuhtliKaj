@@ -31,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
         {
             if (curr > 0)
             {
-                handleHealth(100);
+                handleHealth(10);
                 Debug.Log("Do something else here");
 
             }
@@ -39,10 +39,10 @@ public class PlayerHealth : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            handleHealth(10);
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    handleHealth(10);
+        //}
     }
 
     public int GetHealth()

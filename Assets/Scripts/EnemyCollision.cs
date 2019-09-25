@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EnemyCollision : MonoBehaviour
 {
+    public static bool checkIn = false;
+    public static bool checkMi = false;
+    public static bool checkOut = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,12 @@ public class EnemyCollision : MonoBehaviour
         if (collision.gameObject.layer == 8)
         {
             Debug.Log("killed by fire");
+        }
+        if (collision.gameObject.tag == "BoxesM")
+        {
+            //If the GameObject has the same tag as specified, output this message in the console
+            Debug.Log("Do something else here66");
+            checkMi = true;
         }
     }
 }
