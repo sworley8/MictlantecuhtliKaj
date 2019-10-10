@@ -56,7 +56,7 @@
                 float d = (tex2D(_MainTex, float2(i.uv.y, i.uv.x)) + 0.5) * (i.uv.y) * _Dissolve;
                 clip(d - 0.5);
                 // apply fog
-                UNITY_APPLY_FOG(i.fogCoord, col);
+                //UNITY_APPLY_FOG(i.fogCoord, col);
                 return _Color;
             }
             ENDCG

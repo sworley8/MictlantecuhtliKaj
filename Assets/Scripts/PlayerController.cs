@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float followSpeed = .1f;
     public float minimumDistance = 5f;
+    public AudioSource gunSound;
     private Vector2Int cursorLocation = new Vector2Int(0, 0);
 
     // Start is called before the first frame update
@@ -28,8 +29,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire2"))
         {
+            gunSound.Play();
             GameObject laser1 = GameObject.Instantiate(m_shotPrefab, gunNozzle1.position, gunNozzle1.rotation) as GameObject;
             GameObject laser2 = GameObject.Instantiate(m_shotPrefab, gunNozzle2.position, gunNozzle2.rotation) as GameObject;
             GameObject.Destroy(laser1, 3f);
