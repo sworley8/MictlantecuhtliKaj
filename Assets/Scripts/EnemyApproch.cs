@@ -5,19 +5,20 @@ using UnityEngine.UI;
 
 public class EnemyApproch : MonoBehaviour
 {
-	GameObject enemy;
-	GameObject player;
 	public Image Exclaimation;
 	public int flashingCount = 3;
-    bool flagOut = false;
     bool flagMi = false;
-    bool flagIn = false;
+    private AudioSource exclaimSE;
+    GameObject enemy;
+    GameObject player;
     // Start is called before the first frame update
     void Start()
 	{
 		enemy = GameObject.FindGameObjectWithTag("Enemy");
 		player = GameObject.FindGameObjectWithTag("Player");
         Exclaimation.enabled = false;
+        exclaimSE = GetComponent<AudioSource>();
+        exclaimSE.Stop();
     }
 
 	// Update is called once per frame
@@ -41,6 +42,7 @@ public class EnemyApproch : MonoBehaviour
             StartCoroutine(coRoutineExclaim(0.5f));
             EnemyCollision.checkMi = false;
             flagMi = false;
+            exclaimSE.Play();
         }
         //if (EnemyCollision.checkOut == true && flagOut == false)
         //{
