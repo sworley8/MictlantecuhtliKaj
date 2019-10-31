@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
 
         planeInFrontOfPlayer = new Plane(Camera.main.transform.forward, 0f);
         float distanceToOriginPlane = planeInFrontOfPlayer.GetDistanceToPoint(transform.position);
-        planeInFrontOfPlayer.distance = Mathf.Abs(distanceToOriginPlane);
+        planeInFrontOfPlayer.distance = -(distanceToOriginPlane);
 
 
         //Debug.Log(distanceToOriginPlane);
