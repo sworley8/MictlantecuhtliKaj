@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class GameLogic : MonoBehaviour
 {
     public PlayerHealth playerHealth;
+    public GameObject characterRig;
+    public DialogueEngine dialogueEngine;
+    public bool dialogueTrigger;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +22,37 @@ public class GameLogic : MonoBehaviour
         {
             SceneManager.LoadScene("GameOverScreen");
         }
+
+        if (Input.GetKeyDown("l"))
+        {
+            dialogueTrigger = true;
+        }
+
+        Dialogue();
     }
+
+    void PauseScene()
+    {
+        characterRig.GetComponent<Jun_TweenRuntime>().enabled = false;
+    }
+    void ResumeScene()
+    {
+        characterRig.GetComponent<Jun_TweenRuntime>().enabled = true;
+    }
+
+    void Dialogue()
+    {
+        if (dialogueTrigger && !dialogueEngine.dialogueIsActive)
+        {
+            Debug.Log("aaaaaaaaaa");
+            PauseScene();
+            dialogueEngine.dialogueTrigger = true;
+            dialogueTrigger = false;
+        } else if (!dialogueEngine.dialogueIsActive)
+        {
+            
+            ResumeScene();
+        }
+    }
+
 }
