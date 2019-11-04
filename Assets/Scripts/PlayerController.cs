@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -59,7 +58,7 @@ public class PlayerController : MonoBehaviour
 
         planeInFrontOfPlayer = new Plane(Camera.main.transform.forward, 0f);
         float distanceToOriginPlane = planeInFrontOfPlayer.GetDistanceToPoint(transform.position);
-        planeInFrontOfPlayer.distance = -Mathf.Abs(distanceToOriginPlane);
+        planeInFrontOfPlayer.distance = -(distanceToOriginPlane);
 
 
         //Debug.Log(distanceToOriginPlane);
@@ -74,7 +73,7 @@ public class PlayerController : MonoBehaviour
         cursorLocation += deltaMovementInt;
         cursorLocation.Clamp(screenNegClamp, screenPosClamp);
 
-        
+
         Vector3 cursor2Screen = new Vector3(cursorLocation.x + screenOffset.x, cursorLocation.y + screenOffset.y, 0);
 
 
@@ -126,7 +125,7 @@ public class PlayerController : MonoBehaviour
     }
     void OnDrawGizmos()
     {
-        
+
 
     }
 }
