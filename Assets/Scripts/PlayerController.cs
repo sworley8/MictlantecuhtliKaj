@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public float minimumDistance = 5f;
     public AudioSource gunSound;
     private Vector2Int cursorLocation = new Vector2Int(0, 0);
+    private bool isInputEnabled = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2") && isInputEnabled)
         {
             gunSound.Play();
             GameObject laser1 = GameObject.Instantiate(m_shotPrefab, gunNozzle1.position, gunNozzle1.rotation) as GameObject;
@@ -60,11 +61,19 @@ public class PlayerController : MonoBehaviour
         float distanceToOriginPlane = planeInFrontOfPlayer.GetDistanceToPoint(transform.position);
         planeInFrontOfPlayer.distance = -(distanceToOriginPlane);
 
-
+        float inputX;
+        float inputY;
         //Debug.Log(distanceToOriginPlane);
-
-        float inputX = Input.GetAxis("Horizontal");
-        float inputY = Input.GetAxis("Vertical");
+        if (isInputEnabled)
+        {
+            inputX = Input.GetAxis("Horizontal");
+            inputY = Input.GetAxis("Vertical");
+        } else
+        {
+            inputX = 0f;
+            inputY = 0f;
+        }
+        
 
         Vector2 direction = new Vector2(inputX, inputY);
         Vector2 deltaMovement = direction * Time.deltaTime * speed;
@@ -127,5 +136,14 @@ public class PlayerController : MonoBehaviour
     {
 
 
+    }
+
+    public void EnableInput()
+    {
+        isInputEnabled = true;
+    }
+    public void DisableInput()
+    {
+        isInputEnabled = false;
     }
 }
