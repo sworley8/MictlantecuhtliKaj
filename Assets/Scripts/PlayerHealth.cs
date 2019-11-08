@@ -14,7 +14,7 @@ public class PlayerHealth : MonoBehaviour
         curr = maxhealth;
     }
 
-    private void handleHealth(int damage)
+    public void handleHealth(int damage)
     {
         curr -= damage;
         HealthCircle.fillAmount = (float)curr / (float)maxhealth;
