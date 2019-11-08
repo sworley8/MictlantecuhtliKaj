@@ -59,5 +59,8 @@ public class GameLogic : MonoBehaviour
             ResumeScene();
         }
     }
-
+    public void StartDialogue()
+    {
+        dialogueTrigger = true;
+    }
 }
