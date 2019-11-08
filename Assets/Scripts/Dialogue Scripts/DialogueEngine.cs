@@ -28,7 +28,7 @@ public class DialogueEngine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(currentScriptNum);
+        //Debug.Log(currentScriptNum);
 
         if (currentDialogue == 0 && dialogueTrigger && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count)
         {
@@ -48,7 +48,10 @@ public class DialogueEngine : MonoBehaviour
             textBox.enabled = false;
             currentDialogue = 0;
             currentScriptNum++;
-            currentScript = Scripts[currentScriptNum].Script;
+            if (currentScriptNum < Scripts.Count)
+            {
+                currentScript = Scripts[currentScriptNum].Script;
+            }
             dialogueIsActive = false;
         }
         
