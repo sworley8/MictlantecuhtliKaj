@@ -34,6 +34,8 @@ public class PlayerController : MonoBehaviour
             gunSound.Play();
             GameObject laser1 = GameObject.Instantiate(m_shotPrefab, gunNozzle1.position, gunNozzle1.rotation) as GameObject;
             GameObject laser2 = GameObject.Instantiate(m_shotPrefab, gunNozzle2.position, gunNozzle2.rotation) as GameObject;
+            laser1.transform.parent = transform;
+            laser2.transform.parent = transform;
             GameObject.Destroy(laser1, 3f);
             GameObject.Destroy(laser2, 3f);
             int layerMask = 1 << 9;
