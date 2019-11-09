@@ -14,6 +14,8 @@ public class DialogueObject : MonoBehaviour
     public Sprite image2;
     public Position positionImage2;
 
+    public AudioClip voiceClip;
+
     private void Start()
     {
         if (positionImage1 == positionImage2)
