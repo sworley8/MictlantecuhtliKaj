@@ -13,6 +13,7 @@ public class Jun_BezierPoint : MonoBehaviour {
 
     [SerializeField] Vector3 m_handles01 = new Vector3(-0.1f,0,0);
     [SerializeField] Vector3 m_handles02 = new Vector3(0.1f,0,0);
+    public Vector3 targetRotation = new Vector3(0.1f, 0, 0);
     [SerializeField] PointType m_type = PointType.Smooth;
 
     [HideInInspector] [SerializeField] Jun_BezierCurve m_curve;

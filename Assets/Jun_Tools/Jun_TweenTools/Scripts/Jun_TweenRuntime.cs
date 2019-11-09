@@ -25,6 +25,9 @@ public class Jun_TweenRuntime : MonoBehaviour
 	public bool awakePlay = true;
 	public bool lgnoreTimeScale = true;
     public bool randomStartValue = false;
+    public bool isPause = false;
+    public float totalPauseTime = 0;
+    public float totalUnscaledPauseTime = 0;
 
     [Range(0, 1)]
     public float startValue = 0;
@@ -38,7 +41,8 @@ public class Jun_TweenRuntime : MonoBehaviour
 			if(!isPlaying)
 				return 0;
 
-			float curTimeLenght = lgnoreTimeScale? (Time.time - playTimeNote):(Time.unscaledTime - playTimeNote);
+			float curTimeLenght = lgnoreTimeScale? (Time.time - playTimeNote - totalPauseTime) : (Time.unscaledTime - playTimeNote - totalUnscaledPauseTime);
+
 			float curValue = curTimeLenght/animationTime;
 
 			if(!isPing)
@@ -137,7 +141,12 @@ public class Jun_TweenRuntime : MonoBehaviour
 		if(isPlaying)
 		{
 			PlayAtTime (currentTimeValue);
-		}
+		} 
+        if (isPause)
+        {
+            totalPauseTime += Time.deltaTime;
+            totalUnscaledPauseTime += Time.unscaledDeltaTime;
+        }
 	}
 
 	//Note Animation time
@@ -280,5 +289,17 @@ public class Jun_TweenRuntime : MonoBehaviour
             return tweens[index];
         }
         return null;
+    }
+
+    public void Pause()
+    {
+        _isPlaying = false;
+        isPause = true;
+    }
+
+    public void Resume()
+    {
+        _isPlaying = true;
+        isPause = false;
     }
 }

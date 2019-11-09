@@ -127,7 +127,66 @@ public class Jun_BezierCurve : MonoBehaviour
         return transform.position;
     }
 
-	public Jun_BezierPoint GetPrePoint (int index)
+    public Quaternion GetRotationInCurve(float timeValue)
+    {
+        if (isClose)
+        {
+            if (timeValue > 1)
+                timeValue = timeValue - (int)timeValue;
+
+            if (timeValue < 0)
+            {
+                timeValue = 1 + timeValue - (int)timeValue;
+            }
+        }
+
+        if (pointCount < 2)
+            return transform.rotation;
+        if (timeValue <= 0)
+            return GetPoint(0).transform.rotation;
+        if (timeValue >= 1)
+            return isClose ? Quaternion.LookRotation(GetPoint(0).targetRotation, Vector3.up) : Quaternion.LookRotation(GetPoint(pointCount - 1).targetRotation, Vector3.up);
+
+        float lenght = curveLenght;
+
+        float preLenght = 0;
+
+        int count = pointCount - 1;
+        if (isClose)
+            count = pointCount;
+        for (int i = 0; i < count; i++)
+        {
+            Jun_BezierPoint thisPoint = GetPoint(i);
+            Jun_BezierPoint nextPoint = GetPoint(i + 1);
+
+            if (isClose && i == count - 1)
+                nextPoint = GetPoint(0);
+
+            if (thisPoint == null || nextPoint == null)
+                break;
+
+            Vector3 prePosition = thisPoint.transform.position;
+            float thisLenght = GetCurveLenght(thisPoint, nextPoint);
+
+            float thisV = thisLenght * 1.0f / lenght;
+
+            if (timeValue >= preLenght && timeValue <= preLenght + thisV)
+            {
+                Vector3 pos = GetPoint(thisPoint, nextPoint, (timeValue - preLenght) / thisV);
+                Quaternion prevRot = Quaternion.LookRotation(thisPoint.targetRotation, Vector3.up);
+                Quaternion nextRot = Quaternion.LookRotation(nextPoint.targetRotation, Vector3.up);
+                Quaternion newForwardVec = Quaternion.Lerp(prevRot, nextRot, (timeValue - preLenght) / thisV);
+                //return Quaternion.LookRotation(newForwardVec, Vector3.up);
+                return newForwardVec;
+            }
+
+            preLenght += thisV;
+        }
+
+        return transform.rotation;
+    }
+
+    public Jun_BezierPoint GetPrePoint (int index)
 	{
 		int i = index - 1;
 		if (isClose && i < 0)

@@ -107,7 +107,7 @@ public class Jun_Tween
 			return;
 
 		curveValue = _curve.Evaluate (curveValue);
-		
+        //Debug.Log(curveValue);
 		switch (_tweenType)
 		{
 			case Jun_TweenType.PositionTween:
@@ -186,8 +186,12 @@ public class Jun_Tween
 
             case Jun_TweenType.BezierCurve:
                 Vector3 curPosition = _bezierCurve.GetPointInCurve(curveValue);
+                Quaternion curRotation = _bezierCurve.GetRotationInCurve(curveValue);
                 if (_isLocal)
+                {
                     _tweenObject.localPosition = curPosition;
+                    _tweenObject.rotation = curRotation;
+                }
                 else
                     _tweenObject.position = curPosition;
                 break;
