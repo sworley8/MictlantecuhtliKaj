@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     public float minimumDistance = 5f;
     public AudioSource gunSound;
     private Vector2Int cursorLocation = new Vector2Int(0, 0);
-    private bool isInputEnabled = false;
+    private bool isInputEnabled = true;
 
     // Start is called before the first frame update
     void Start()
