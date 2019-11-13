@@ -14,6 +14,7 @@ public class Jun_BezierCurveEditor : Editor
 
 		tar.isAuto = EditorGUILayout.Toggle("Auto", tar.isAuto);
         tar.isClose = EditorGUILayout.Toggle("Close:",tar.isClose);
+        tar.isAutoRotate = EditorGUILayout.Toggle("Auto Rotate", tar.isAutoRotate);
         if(GUILayout.Button("AddPoint",EditorStyles.miniButton))
         {
             tar.AddPoint();
