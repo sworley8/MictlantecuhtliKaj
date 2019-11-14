@@ -9,8 +9,12 @@ public class Jun_TweenRuntime : MonoBehaviour
 	[System.Serializable]
 	public class OnFinish : UnityEvent{}
 	[SerializeField] OnFinish m_onFinish;
+    [SerializeField] bool m_isRotate = false;
 
-	public enum PlayType
+    public bool isRotate { get { return m_isRotate; } set { m_isRotate = value; } }
+
+
+    public enum PlayType
 	{
 		Deful,
 		One,
@@ -140,7 +144,7 @@ public class Jun_TweenRuntime : MonoBehaviour
 	{
 		if(isPlaying)
 		{
-			PlayAtTime (currentTimeValue);
+			PlayAtTime (currentTimeValue, isRotate);
 		} 
         if (isPause)
         {
@@ -190,7 +194,20 @@ public class Jun_TweenRuntime : MonoBehaviour
 		}
 	}
 
-	void PlayAnimation ()
+    // Same function as above, but let's you choose if you want rotate on or off
+    public void PlayAtTime(float curveValue, bool isRotate)
+    {
+        foreach (Jun_Tween thisTween in tweens)
+        {
+            if (curveValue >= thisTween.minAnimationTime && curveValue <= thisTween.maxAnimationTime)
+            {
+                float thisValue = (curveValue - thisTween.minAnimationTime) / (thisTween.maxAnimationTime - thisTween.minAnimationTime);
+                thisTween.PlayAtTime(thisValue, isRotate);
+            }
+        }
+    }
+
+    void PlayAnimation ()
 	{      
 		_isPlaying = true;
 		this.enabled = true;
