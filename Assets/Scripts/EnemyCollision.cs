@@ -37,6 +37,7 @@ public class EnemyCollision : MonoBehaviour
         }
         if (collision.gameObject.layer == 8)
         {
+            Debug.Log("hit by lazer");
             Debug.Log("killed by fire");
         }
         if (collision.gameObject.tag == "BoxesM")

@@ -36,7 +36,9 @@ public class Jun_TweenRuntimeEditor : Editor
 		Jun_TweenRuntime tar = (Jun_TweenRuntime)target;
 		serializedObject.Update ();
 
-		SerializedProperty playType = serializedObject.FindProperty ("playType");
+        tar.isRotate = EditorGUILayout.Toggle("Rotation", tar.isRotate);
+
+        SerializedProperty playType = serializedObject.FindProperty ("playType");
 		SerializedProperty animationTime = serializedObject.FindProperty ("animationTime");
 		SerializedProperty enablePlay = serializedObject.FindProperty ("enablePlay");
 		SerializedProperty awakePlay = serializedObject.FindProperty ("awakePlay");

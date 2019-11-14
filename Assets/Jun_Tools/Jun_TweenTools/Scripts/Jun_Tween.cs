@@ -198,8 +198,109 @@ public class Jun_Tween
 		}
 	}
 
-	//Play
-	public void Play ()
+    // Same function as above, but let's you choose if you want rotate on or off
+    public void PlayAtTime(float curveValue, bool isRotate)
+    {
+        if (_tweenObject == null)
+            return;
+
+        curveValue = _curve.Evaluate(curveValue);
+        //Debug.Log(curveValue);
+        switch (_tweenType)
+        {
+            case Jun_TweenType.PositionTween:
+                if (_isLocal)
+                    _tweenObject.localPosition = (toVector - fromVector) * curveValue + fromVector;
+                else
+                    _tweenObject.position = (toVector - fromVector) * curveValue + fromVector;
+                break;
+
+            case Jun_TweenType.RotateTween:
+                if (_isLocal)
+                    _tweenObject.localEulerAngles = (toVector - fromVector) * curveValue + fromVector;
+                else
+                    _tweenObject.eulerAngles = (toVector - fromVector) * curveValue + fromVector;
+                break;
+
+            case Jun_TweenType.ScaleTween:
+                _tweenObject.localScale = (toVector - fromVector) * curveValue + fromVector;
+                break;
+
+            case Jun_TweenType.ColorTween:
+                Color curColor = (toColor - fromColor) * curveValue + fromColor;
+
+                if (maskableGraphic != null)
+                    maskableGraphic.color = curColor;
+
+                if (spriteRender != null)
+                    spriteRender.color = curColor;
+                else if (render != null)
+                {
+                    if (render.material != null)
+                        render.material.color = curColor;
+                }
+
+                if (particleSystem != null)
+                {
+                    var particleMain = particleSystem.main;
+                    particleMain.startColor = curColor;
+                }
+                break;
+
+            case Jun_TweenType.AlphaTween:
+                float curAlpha = (toValue - fromValue) * curveValue + fromValue;
+                curAlpha = curAlpha < 0 ? 0 : curAlpha;
+                curAlpha = curAlpha > 1 ? 1 : curAlpha;
+
+                if (maskableGraphic != null)
+                    maskableGraphic.color = new Color(maskableGraphic.color.r, maskableGraphic.color.g, maskableGraphic.color.b, curAlpha);
+
+                if (spriteRender != null)
+                {
+                    spriteRender.color = new Color(spriteRender.color.r, spriteRender.color.g, spriteRender.color.b, curAlpha);
+                }
+                else if (render != null)
+                {
+                    if (render.material != null)
+                    {
+                        Color currentColor = render.material.GetColor("_TintColor");
+                        Color newColor = new Color(currentColor.r, currentColor.g, currentColor.b, curAlpha);
+                        render.material.SetColor("_TintColor", newColor);
+                    }
+                }
+
+                if (particleSystem != null)
+                {
+                    var particleMain = particleSystem.main;
+                    particleMain.startColor = new Color(particleMain.startColor.color.r, particleMain.startColor.color.g, particleMain.startColor.color.b, curAlpha);
+                }
+                break;
+
+            case Jun_TweenType.FieldOfViewTween:
+                float curField = (toValue - fromValue) * curveValue + fromValue;
+                if (tweenCamera != null)
+                    tweenCamera.fieldOfView = curField;
+                break;
+
+            case Jun_TweenType.BezierCurve:
+                Vector3 curPosition = _bezierCurve.GetPointInCurve(curveValue);
+                Quaternion curRotation = Quaternion.identity;
+                if (isRotate)
+                     curRotation = _bezierCurve.GetRotationInCurve(curveValue);
+                if (_isLocal)
+                {
+                    _tweenObject.localPosition = curPosition;
+                    if (isRotate)
+                        _tweenObject.rotation = curRotation;
+                }
+                else
+                    _tweenObject.position = curPosition;
+                break;
+        }
+    }
+
+    //Play
+    public void Play ()
 	{
 		_isPlaying = true;
 	}
