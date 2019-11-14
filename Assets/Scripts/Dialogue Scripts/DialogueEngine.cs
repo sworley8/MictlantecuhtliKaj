@@ -17,6 +17,7 @@ public class DialogueEngine : MonoBehaviour
 
     private int currentDialogue = 0;
     private int currentScriptNum = 0;
+    public AudioSource voiceAS;
 
 
 
@@ -59,12 +60,15 @@ public class DialogueEngine : MonoBehaviour
 
     public void nextDialogue()
     {
+
         dialogueTrigger = false;
         CanvasImageLeft.enabled = true;
         CanvasImageRight.enabled = true;
         DialogueBox.enabled = true;
         textBox.enabled = true;
         textBox.text = currentScript[currentDialogue].dialogue;
+        voiceAS.clip = currentScript[currentDialogue].voiceClip;
+        voiceAS.Play();
         if (currentScript[currentDialogue].positionImage1 == DialogueObject.Position.Left)
         {
             CanvasImageLeft.sprite = currentScript[currentDialogue].image1;

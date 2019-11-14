@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -55.9, y: 14.5}
-  m_SizeDelta: {x: 601.6, y: 112.1}
+  m_AnchoredPosition: {x: -5.1, y: 14.5}
+  m_SizeDelta: {x: 703.1, y: 112.1}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &26396899
 MonoBehaviour:
@@ -331,6 +331,7 @@ Transform:
   - {fileID: 157362008}
   - {fileID: 1836127806}
   - {fileID: 1785093408}
+  - {fileID: 1858738199}
   - {fileID: 1821131305}
   - {fileID: 1039096499}
   m_Father: {fileID: 1438748260}
@@ -351,8 +352,9 @@ MonoBehaviour:
   Script:
   - {fileID: 157362007}
   - {fileID: 1836127807}
-  - {fileID: 1821131306}
   - {fileID: 1785093409}
+  - {fileID: 1858738200}
+  - {fileID: 1821131306}
   - {fileID: 1039096500}
 --- !u!1001 &119463170
 PrefabInstance:
@@ -624,13 +626,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0834c8ee7f5ebd43b98b606989548bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: Why are you like this? Ted would have loved to see us all together, even
-    for a short bit. You know how he is taking the divorce.
+  dialogue: 'Why are you like this? Ted would have loved to see us all together, even
+    for a short bit. You know how he is taking the divorce. '
   speaker: 0
   image1: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d, type: 3}
   positionImage1: 0
   image2: {fileID: 21300000, guid: 4dbc8d9d5fd563f428284387aff94040, type: 3}
   positionImage2: 1
+  voiceClip: {fileID: 0}
 --- !u!4 &157362008
 Transform:
   m_ObjectHideFlags: 0
@@ -964,6 +967,7 @@ MonoBehaviour:
   positionImage1: 0
   image2: {fileID: 21300000, guid: 4dbc8d9d5fd563f428284387aff94040, type: 3}
   positionImage2: 1
+  voiceClip: {fileID: 0}
 --- !u!4 &349519881 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: fb25abbf58df22143be242929848e150,
@@ -1929,7 +1933,7 @@ GameObject:
   - component: {fileID: 1039096499}
   - component: {fileID: 1039096500}
   m_Layer: 0
-  m_Name: Dialogue 5
+  m_Name: Dialogue 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1947,7 +1951,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 55724250}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1039096500
 MonoBehaviour:
@@ -1962,12 +1966,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: Well, he definitely doesn't want to see you after you've let him down
-    so many times!
+    so many times! I swear this is the last time I let you take him anywhere. You
+    have ruined our lives.
   speaker: 0
   image1: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d, type: 3}
   positionImage1: 0
   image2: {fileID: 21300000, guid: 4dbc8d9d5fd563f428284387aff94040, type: 3}
   positionImage2: 1
+  voiceClip: {fileID: 0}
 --- !u!1001 &1103144571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2644,6 +2650,7 @@ MonoBehaviour:
   textBox: {fileID: 26396899}
   dialogueTrigger: 0
   dialogueIsActive: 0
+  voiceAS: {fileID: 1638608927}
 --- !u!4 &1438748260
 Transform:
   m_ObjectHideFlags: 0
@@ -3532,12 +3539,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: 'Our son! If you had cared about him more, maybe none of this would have
-    happened. '
+    happened. I don''t even need to let you see him. '
   speaker: 0
   image1: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d, type: 3}
   positionImage1: 0
   image2: {fileID: 21300000, guid: 4dbc8d9d5fd563f428284387aff94040, type: 3}
   positionImage2: 1
+  voiceClip: {fileID: 0}
 --- !u!1 &1821131304
 GameObject:
   m_ObjectHideFlags: 0
@@ -3549,7 +3557,7 @@ GameObject:
   - component: {fileID: 1821131305}
   - component: {fileID: 1821131306}
   m_Layer: 0
-  m_Name: Dialogue 4
+  m_Name: Dialogue 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3567,7 +3575,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 55724250}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1821131306
 MonoBehaviour:
@@ -3581,12 +3589,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0834c8ee7f5ebd43b98b606989548bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: I am his mother, Mictlantecuhtli. You cannot keep me away from him.
+  dialogue: 'I am his mother, Mictlantecuhtli. You cannot keep me away from him. '
   speaker: 1
   image1: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d, type: 3}
   positionImage1: 0
   image2: {fileID: 21300000, guid: 4dbc8d9d5fd563f428284387aff94040, type: 3}
   positionImage2: 1
+  voiceClip: {fileID: 8300000, guid: e4afe4e2c1a31bf4a99a0d10264c56d8, type: 3}
 --- !u!1 &1836127805
 GameObject:
   m_ObjectHideFlags: 0
@@ -3630,13 +3639,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0834c8ee7f5ebd43b98b606989548bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: 'Even if my line of work gave me time, I would not spend it with you,
-    even for a brief moment. You took my son from me. '
+  dialogue: Even if my line of work gave me time, I would not spend it with you, even
+    for a brief moment. You took my son from me.
   speaker: 1
   image1: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d, type: 3}
   positionImage1: 0
   image2: {fileID: 21300000, guid: 4dbc8d9d5fd563f428284387aff94040, type: 3}
   positionImage2: 1
+  voiceClip: {fileID: 8300000, guid: a72780a8dd0378b40b918ec2dd64dbf7, type: 3}
+--- !u!1 &1858738198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1858738199}
+  - component: {fileID: 1858738200}
+  m_Layer: 0
+  m_Name: Dialogue 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1858738199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858738198}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 55724250}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1858738200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858738198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0834c8ee7f5ebd43b98b606989548bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 'For Ted''s sake, if this is how it''s going to be, feel free to take
+    him alone this time. '
+  speaker: 0
+  image1: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d, type: 3}
+  positionImage1: 0
+  image2: {fileID: 21300000, guid: 4dbc8d9d5fd563f428284387aff94040, type: 3}
+  positionImage2: 1
+  voiceClip: {fileID: 0}
 --- !u!1 &1862287300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3830,6 +3891,7 @@ MonoBehaviour:
   positionImage1: 0
   image2: {fileID: 21300000, guid: 4dbc8d9d5fd563f428284387aff94040, type: 3}
   positionImage2: 1
+  voiceClip: {fileID: 0}
 --- !u!1 &1993198767
 GameObject:
   m_ObjectHideFlags: 0
