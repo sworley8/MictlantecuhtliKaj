@@ -13,20 +13,19 @@ public class DebugPlayerController : MonoBehaviour {
     private Rigidbody playerRB;
     private bool isGrounded;
     private bool isAddGravity = true;
-    private GameObject playerMesh;
+    public GameObject playerMesh;
     private float originalSpeed;
     private Vector3 deltaMovement = Vector3.zero;
     private float airSpeed = 0f;
 
     // Use this for initialization
     void Start () {
-        playerMesh = GameObject.FindGameObjectWithTag("PlayerMesh");
         if (playerMesh == null)
         {
             Debug.Log("Player Mesh tagged object was not found in project");
         }
 
-        playerRB = playerMesh.GetComponent<Rigidbody>();
+        //playerRB = playerMesh.GetComponent<Rigidbody>();
         originalSpeed = speed;
 	}
 
@@ -53,7 +52,7 @@ public class DebugPlayerController : MonoBehaviour {
     {
         if (isAddGravity)
         {
-            playerRB.AddForce(Vector3.down * addedGravity * playerRB.mass);
+            //playerRB.AddForce(Vector3.down * addedGravity * playerRB.mass);
 
         }
     }
@@ -62,7 +61,7 @@ public class DebugPlayerController : MonoBehaviour {
 
     private void Jump()
     {
-        playerRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        //playerRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
 
     private void Move()
