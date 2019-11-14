@@ -8,6 +8,7 @@ TagManager:
   - Boxes
   - BoxesM
   - BoxesO
+  - EnemyActivation
   layers:
   - Default
   - TransparentFX
