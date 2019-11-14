@@ -56,8 +56,8 @@
 				fixed4 fogColor = _FogColor * depthvalue;
 				fixed4 val = fixed4(depthvalue, depthvalue, depthvalue, 1);
 				fixed4 col = tex2Dproj(_MainTex, i.scrPos);
-				//return lerp(col,fogColor,depthvalue);
-				return fixed4(trans01Dist, trans01Dist, trans01Dist,1) * col;
+				return lerp(col,fogColor,depthvalue);
+				//return fixed4(trans01Dist, trans01Dist, trans01Dist,1) * col;
 			}
 			ENDCG
 		}

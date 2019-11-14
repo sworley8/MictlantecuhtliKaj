@@ -11,8 +11,9 @@ public class Jun_BezierCurve : MonoBehaviour
     public int pointCount{ get { return m_bezierPoints.Count; }}
 
     [HideInInspector] [SerializeField] float m_lenght;
+    [SerializeField] bool m_isAutoRotate = true;
     [SerializeField] bool m_isClose = false;
-	[SerializeField] bool m_isAuto = false;
+    [SerializeField] bool m_isAuto = false;
 
     private int sample = 30;
     private bool isChange = true;
@@ -30,6 +31,7 @@ public class Jun_BezierCurve : MonoBehaviour
         }
     }
 
+    public bool isAutoRotate { get { return m_isAutoRotate; } set { m_isAutoRotate = value; IsChange(); }}
     public bool isClose{ get { return m_isClose; }set { m_isClose = value; IsChange(); }}
 	public bool isAuto{ get { return m_isAuto; } set { m_isAuto = value; IsChange(); }}
 
@@ -172,10 +174,21 @@ public class Jun_BezierCurve : MonoBehaviour
 
             if (timeValue >= preLenght && timeValue <= preLenght + thisV)
             {
-                Vector3 pos = GetPoint(thisPoint, nextPoint, (timeValue - preLenght) / thisV);
+                Vector3 pos1 = GetPoint(thisPoint, nextPoint, (timeValue - preLenght) / thisV);
+                Vector3 pos2 = GetPoint(thisPoint, nextPoint, (timeValue - preLenght) / thisV + 0.001f);
                 Quaternion prevRot = Quaternion.LookRotation(thisPoint.targetRotation, Vector3.up);
                 Quaternion nextRot = Quaternion.LookRotation(nextPoint.targetRotation, Vector3.up);
-                Quaternion newForwardVec = Quaternion.Lerp(prevRot, nextRot, (timeValue - preLenght) / thisV);
+
+                Quaternion newForwardVec;
+                if (isAutoRotate)
+                {
+                    newForwardVec = Quaternion.LookRotation(pos2 - pos1, Vector3.up);
+                    
+                } else
+                {
+                    newForwardVec = Quaternion.Lerp(prevRot, nextRot, (timeValue - preLenght) / thisV);
+                }
+
                 //return Quaternion.LookRotation(newForwardVec, Vector3.up);
                 return newForwardVec;
             }
