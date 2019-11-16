@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class DialogueObject : MonoBehaviour
 {
+    [TextArea]
     public string dialogue;
     public Position speaker;
     public string speakerName;

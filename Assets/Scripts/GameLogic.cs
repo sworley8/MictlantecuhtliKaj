@@ -37,13 +37,19 @@ public class GameLogic : MonoBehaviour
     void PauseScene()
     {
         playerController.DisableInput();
-        characterRig.GetComponent<Jun_TweenRuntime>().Pause();
+        if (characterRig != null)
+        {
+            characterRig.GetComponent<Jun_TweenRuntime>().Pause();
+        }
     }
 
     void ResumeScene()
     {
         playerController.EnableInput();
-        characterRig.GetComponent<Jun_TweenRuntime>().Resume();
+        if (characterRig != null)
+        {
+            characterRig.GetComponent<Jun_TweenRuntime>().Resume();
+        }
     }
 
     void Dialogue()
