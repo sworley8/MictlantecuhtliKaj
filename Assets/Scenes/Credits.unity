@@ -245,8 +245,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 329, y: -447.7}
-  m_SizeDelta: {x: 658, y: 1269.3}
+  m_AnchoredPosition: {x: 329, y: -670.27}
+  m_SizeDelta: {x: 658, y: 1714.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &107438747
 MonoBehaviour:
@@ -285,7 +285,9 @@ MonoBehaviour:
     Andrew Han\n Sophia Worley\n\n Anuraj Bhatnagar\n\n Anuraj Bhatnagar\n Jen Hom\n\n
     Yoon Lee\n Sophia Worley\n Unknown\n\n Miranda Bisson\n\n\n\n Brad Baker\n\n Noura
     El Bayrouti\n\n Brandon Shockley\n\n Yoko Sarah Nakama Wong\n\n Addie Murphy\n\n
-    Tanya Churaman\n\n :)"
+    Tanya Churaman\n\n..\n\nHumming the Beat\nSophia Worley (Sample from )\nKarina
+    Mandock\n\nSymphony 11 Tocsin (Allegro Non Troppo) \nShostakovich\n\nCello Concerto
+    No. 1 in E flat major, Op. 107: Allegretto\nShostakovich\n\n :)"
 --- !u!222 &107438748
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -401,8 +403,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -158, y: -448.44998}
-  m_SizeDelta: {x: 315, y: 1267.8}
+  m_AnchoredPosition: {x: -158, y: -671}
+  m_SizeDelta: {x: 315, y: 1713}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &130599018
 MonoBehaviour:
@@ -438,8 +440,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Team Leads\n\n     \n3d Modelers\n\n\nProgrammers\n\n\n\nLevel Designer\n\nWriters\n\n\nSFX/Music\n\n\n\nArtist\n\nVoice
-    Actors          \n\nMictlantecuhtli Kaj\n\nSana Socks\n\nTed Kaj\n\nThe Devil\n\nTurk\n\nDuke\n\nSpecial
-    Thanks To VGDEV "
+    Actors          \n\nMictlantecuhtli Kaj\n\nSana Socks\n\nTed Kaj\n\nThe Devil\n\nTurk\n\nDuke\n\nMusic\n\nTitle
+    Song\nProduced By\nPerformed By\n\nLevel 1 Song\nWritten By\n\nLevel 2 Song\nWritten
+    By\n\nSpecial Thanks To VGDEV "
 --- !u!222 &130599019
 CanvasRenderer:
   m_ObjectHideFlags: 0
