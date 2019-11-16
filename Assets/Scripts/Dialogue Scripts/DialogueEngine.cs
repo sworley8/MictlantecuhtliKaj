@@ -11,6 +11,8 @@ public class DialogueEngine : MonoBehaviour
     public Image CanvasImageLeft;
     public Image CanvasImageRight;
     public Image DialogueBox;
+    public Image LeftNameBox;
+    public Text LeftTextBox;
     public Text textBox;
     public bool dialogueTrigger = false;
     public bool dialogueIsActive = false;
@@ -23,6 +25,8 @@ public class DialogueEngine : MonoBehaviour
 
     void Start()
     {
+        LeftNameBox.enabled = false;
+        LeftTextBox.enabled = false;
         currentScript = Scripts[currentScriptNum].Script;
     }
 
@@ -43,6 +47,8 @@ public class DialogueEngine : MonoBehaviour
 
         else if (Input.GetButtonDown("Fire1") && currentDialogue >= currentScript.Count)
         {
+            LeftTextBox.enabled = false;
+            LeftNameBox.enabled = false;
             CanvasImageLeft.enabled = false;
             CanvasImageRight.enabled = false;
             DialogueBox.enabled = false;
@@ -69,6 +75,9 @@ public class DialogueEngine : MonoBehaviour
         textBox.text = currentScript[currentDialogue].dialogue;
         voiceAS.clip = currentScript[currentDialogue].voiceClip;
         voiceAS.Play();
+        LeftTextBox.enabled = true;
+        LeftTextBox.text = currentScript[currentDialogue].speakerName;
+        LeftNameBox.enabled = true;
         if (currentScript[currentDialogue].positionImage1 == DialogueObject.Position.Left)
         {
             CanvasImageLeft.sprite = currentScript[currentDialogue].image1;
