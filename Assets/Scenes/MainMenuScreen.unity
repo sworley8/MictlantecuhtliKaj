@@ -2334,9 +2334,10 @@ GameObject:
   - component: {fileID: 731691424}
   - component: {fileID: 731691426}
   - component: {fileID: 731691425}
+  - component: {fileID: 731691427}
   m_Layer: 5
   m_Name: Back2
-  m_TagString: Back
+  m_TagString: Back2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2353,7 +2354,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 766409605}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2398,6 +2399,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731691423}
   m_CullTransparentMesh: 0
+--- !u!114 &731691427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731691423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4268c4328de4c5da876a5803bf8f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerBack: 20
 --- !u!4 &751651390 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 415032, guid: c4c676882c56a429b9fb9b5130f39f8a,
@@ -2585,9 +2599,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 731691424}
   - {fileID: 1716263909}
   - {fileID: 1108031423}
+  - {fileID: 731691424}
   - {fileID: 1158814605}
   - {fileID: 974004521}
   - {fileID: 1448609627}
@@ -3097,7 +3111,7 @@ GameObject:
   - component: {fileID: 974004522}
   m_Layer: 0
   m_Name: Bubbles
-  m_TagString: Untagged
+  m_TagString: Bubbles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3417,9 +3431,11 @@ GameObject:
   - component: {fileID: 1108031423}
   - component: {fileID: 1108031425}
   - component: {fileID: 1108031424}
+  - component: {fileID: 1108031426}
+  - component: {fileID: 1108031427}
   m_Layer: 5
   m_Name: Glitch
-  m_TagString: Back
+  m_TagString: Glitching
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3436,7 +3452,7 @@ RectTransform:
   m_LocalScale: {x: 1.0000212, y: 1.0000212, z: 1.0000212}
   m_Children: []
   m_Father: {fileID: 766409605}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3481,6 +3497,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108031422}
   m_CullTransparentMesh: 0
+--- !u!114 &1108031426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108031422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f48be95f305654e82bacb4660cb41d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerBack: 0.01
+--- !u!95 &1108031427
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108031422}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 45b8a3c3ebd6b4965a7aa5e7acbb7c84, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1127867120
 GameObject:
   m_ObjectHideFlags: 0
@@ -3705,6 +3753,7 @@ GameObject:
   - component: {fileID: 1158814607}
   - component: {fileID: 1158814606}
   - component: {fileID: 1158814608}
+  - component: {fileID: 1158814609}
   m_Layer: 5
   m_Name: Back1
   m_TagString: Back
@@ -3788,6 +3837,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1158814609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158814604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4268c4328de4c5da876a5803bf8f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerBack: 0.05
 --- !u!4 &1162958423 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4274653050354540, guid: e55149ba6f4d00741984987e258c3378,
@@ -5112,7 +5174,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 110, y: 273}
+  m_AnchoredPosition: {x: -16, y: 279}
   m_SizeDelta: {x: 891.1, y: 100.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1448609628
@@ -5739,7 +5801,7 @@ GameObject:
   - component: {fileID: 1716263909}
   m_Layer: 0
   m_Name: Embers
-  m_TagString: Untagged
+  m_TagString: Embers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5763,7 +5825,7 @@ Transform:
   - {fileID: 1022284853}
   - {fileID: 1076475160}
   m_Father: {fileID: 766409605}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1717395908
 PrefabInstance:

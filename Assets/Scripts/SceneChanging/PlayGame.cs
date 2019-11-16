@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayGame : MonoBehaviour
 {
+    //public float timerBack = 20f;
+    GameObject backgroundImage;
     public void playKaj()
     {
-        //SceneManager.LoadScene(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
     }
     public void creditKaj()
     {
