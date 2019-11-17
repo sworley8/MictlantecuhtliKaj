@@ -9,6 +9,11 @@ TagManager:
   - BoxesM
   - BoxesO
   - EnemyActivation
+  - Back
+  - Back2
+  - Embers
+  - Bubbles
+  - Glitching
   layers:
   - Default
   - TransparentFX
@@ -24,7 +29,7 @@ TagManager:
   - HealthUI
   - Target
   - Kaj
-  - 
+  - BubEm
   - 
   - 
   - 

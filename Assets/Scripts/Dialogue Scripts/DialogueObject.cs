@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class DialogueObject : MonoBehaviour
 {
+    [TextArea]
     public string dialogue;
     public Position speaker;
+    public string speakerName;
 
     public Sprite image1;
     public Position positionImage1;
@@ -23,6 +25,10 @@ public class DialogueObject : MonoBehaviour
             positionImage1 = Position.Left;
             positionImage2 = Position.Right;
             Debug.Log("Positions should not be equal to each other");
+        }
+        if (speakerName == null)
+        {
+            speakerName = "NULL";
         }
     }
     public enum Position

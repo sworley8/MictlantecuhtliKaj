@@ -9,7 +9,7 @@ public class KamaMovement : MonoBehaviour
     //move in local rotation with respect to world
     void Movement()
     {
-        transform.Translate(transform.forward * Time.deltaTime * velocity, Space.World);
+        transform.Translate(-transform.forward * Time.deltaTime * velocity, Space.World);
 
     }
     // Start is called before the first frame update

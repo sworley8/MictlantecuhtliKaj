@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.UI;
 using UnityEngine.UI;
 
 public class KamaEnemyShooting : MonoBehaviour
@@ -60,18 +59,23 @@ public class KamaEnemyShooting : MonoBehaviour
         GameObject.Destroy(laser3, 3f);
         GameObject.Destroy(laser4, 3f);
         //shots = true;
-        RaycastHit hitted;
-        rayCastDir = kamaEnemy.transform.position;
-        if (Physics.Raycast(gameObject.transform.position, rayCastDir, out hitted, enemyRange))
+        int layerMask = 1 << 13;
+
+        // This would cast rays only against colliders in layer 8.
+        // But instead we want to collide against everything except layer 8. The ~ operator does this, it inverts a bitmask.
+
+        RaycastHit hit;
+        // Does the ray intersect any objects excluding the player layer
+        if (Physics.BoxCast(transform.position, new Vector3(.5f, .5f, .5f), transform.forward, out hit, transform.rotation, Mathf.Infinity, layerMask))
         {
-            Debug.DrawLine(transform.position, hitted.point, Color.green);
-            Debug.Log("I am : " + transform.name + " and I hit: " + hitted.transform.name);
-        }
-        float distanceBetween = Vector3.Distance(transform.position, kamaEnemy.position) / 200;
-        int damage = (int)(scaledDamage * distanceBetween + minDamage);
-        if (kamaEnemy.tag == "Player")
-        {
-            ph.handleHealth(damage);
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            float distanceBetween = Vector3.Distance(transform.position, laser3.transform.position) / 200;
+            Debug.Log("I am : " + " and I hit: ");
+            int damage = (int)(scaledDamage * distanceBetween + minDamage);
+            if (hit.transform.tag == "Player")
+            {
+                ph.handleHealth(damage);
+            }
         }
     }
     void OnDrawGizmos()

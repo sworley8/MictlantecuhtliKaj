@@ -33,9 +33,7 @@ public class Glock : MonoBehaviour {
         angle = Mathf.Lerp(angle, startAngle, Time.deltaTime * 10);
         transform.localEulerAngles = new Vector3(angle, 0, 0);
 
-        if (Input.GetButtonDown("Fire1") && !offhand) {
-            Fire();
-        }
+
         if (Input.GetButtonDown("Fire2") && offhand) {
             Fire();
         }
