@@ -63,7 +63,7 @@ Material:
     - _Glossiness: 0.5
     - _LightSaberFactor: 0.66
     - _LineScale: 1
-    - _LineWidth: 50
+    - _LineWidth: 100
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
