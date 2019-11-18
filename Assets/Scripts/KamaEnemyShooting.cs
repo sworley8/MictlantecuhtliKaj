@@ -18,8 +18,15 @@ public class KamaEnemyShooting : MonoBehaviour
     public GameObject m_shotPrefab;
     Vector3 rayCastDir;
     private bool shots;
+    private bool isActivated;
+    public bool stationaryRotate = false;
+    public float minDistanceToStartShooting = 100f;
+    private Transform player;
     //private LineRenderer shotLine;
     private float scaledDamage;
+    private Vector3 prevPlayerPos;
+    public float rotationSpeed;
+    public Vector3 lazerOffset;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,16 +39,30 @@ public class KamaEnemyShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        targetStart -= Time.deltaTime;
-        if (targetStart <= targetEnd)
+        if (isActivated)
         {
-            reloadTime -= Time.deltaTime;
-            if (reloadTime <= 0f)
+            Vector3 estimatedNewPos;
+            float bulletSpeed = m_shotPrefab.GetComponentInChildren<ShotBehavior>().speed;
+            //Debug.Log(Vector3.Distance(transform.position, player.position) / bulletSpeed);
+            estimatedNewPos = player.position + (Vector3.Distance(transform.position, player.position) / bulletSpeed * ((player.position - prevPlayerPos) / Time.deltaTime));
+            estimatedNewPos += lazerOffset;
+            float step = rotationSpeed * Time.deltaTime;
+            Vector3 delta = Vector3.RotateTowards(transform.forward, estimatedNewPos - transform.position, step, 0f);
+            //transform.rotation = Quaternion.LookRotation(estimatedNewPos - transform.position, Vector3.up);
+            transform.rotation = Quaternion.LookRotation( delta, Vector3.up);
+            //Debug.Log(player.position);
+            targetStart -= Time.deltaTime;
+            if (targetStart <= targetEnd)
             {
-                Shootings();
-                reloadTime = 0.2f;
-                targetStart = 2f;
+                reloadTime -= Time.deltaTime;
+                if (reloadTime <= 0f)
+                {
+                    Shootings();
+                    reloadTime = 0.2f;
+                    targetStart = 2f;
+                }
             }
+            prevPlayerPos = player.transform.position;
         }
         //if (!shots && (reloadTime != 0))
         //{
@@ -82,5 +103,23 @@ public class KamaEnemyShooting : MonoBehaviour
     {
         Vector3 forward = transform.forward * 10;
         Debug.DrawRay(transform.position, transform.forward * 1000, Color.red);
+    }
+
+    void OnTriggerEnter(Collider collision)
+    {
+        float distanceToPlayer = Vector3.Distance(collision.transform.position, transform.position);
+        if (collision.transform.tag == "EnemyActivation" && distanceToPlayer > minDistanceToStartShooting)
+        {
+            player = collision.transform;
+            prevPlayerPos = player.position;
+            isActivated = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.transform.tag == "EnemyActivation")
+        {
+            isActivated = false;
+        }
     }
 }

@@ -26,7 +26,7 @@ public class EnemyCollision : MonoBehaviour
     void OnTriggerEnter(Collider collision)
     {
         //Debug.Log("Do something else here11");
-        if (collision.gameObject.tag == "EnemyActivation")
+        if (collision.gameObject.tag == "EnemyActivation" && enemyBezierCurve != null)
         {
             Debug.Log("ACTIVATED: " + gameObject.name);
             enemyBezierCurve.Resume();
