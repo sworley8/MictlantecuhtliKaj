@@ -13,9 +13,9 @@ public class Glock : MonoBehaviour {
     public Transform muzzleFlash;
     Material m;
 
-    Vector3 startOffset;
-    float startAngle;
-    float angle;
+    protected Vector3 startOffset;
+    protected float startAngle;
+    protected float angle;
 
     public bool offhand;
 

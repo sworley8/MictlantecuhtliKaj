@@ -6,7 +6,8 @@ public class MissileEnemy : MonoBehaviour
 {
     // Start is called before the first frame update
     public float timeUntilFire;
-    public MissileMovement missile;
+    public MissileMovement missile1;
+    public MissileMovement missile2;
 
     void Start()
     {
@@ -37,6 +38,7 @@ public class MissileEnemy : MonoBehaviour
 
     private void FireMissile()
     {
-        missile.FireMissile();
+        missile1.FireMissile();
+        missile2.FireMissile();
     }
 }

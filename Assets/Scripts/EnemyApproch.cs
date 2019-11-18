@@ -56,7 +56,6 @@ public class EnemyApproch : MonoBehaviour
 		    for (int i = 0; i < flashingCount; i++)
 		    {
                 Exclaimation.enabled = true;
-                Debug.Log("Do something else h");
 				yield return new WaitForSecondsRealtime(waiting);
                 Exclaimation.enabled = false;
                 yield return new WaitForSecondsRealtime(waiting);
