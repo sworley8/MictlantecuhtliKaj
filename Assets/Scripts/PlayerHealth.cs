@@ -31,8 +31,9 @@ public class PlayerHealth : MonoBehaviour
         {
             if (curr > 0)
             {
+                Debug.Log("============" + collision.gameObject.name + "==============");
                 handleHealth(10);
-                Debug.Log("Do something else here");
+                //Debug.Log("Do something else here");
 
             }
         }

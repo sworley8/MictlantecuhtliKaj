@@ -23,7 +23,7 @@ public class EnemyCollision : MonoBehaviour
     }
     void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("Do something else here11");
+        //Debug.Log("Do something else here11");
         if (collision.gameObject.tag == "EnemyActivation")
         {
             enemyBezierCurve.Resume();
@@ -32,18 +32,18 @@ public class EnemyCollision : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             //If the GameObject has the same tag as specified, output this message in the console
-            Debug.Log("Do something else here");
+            //Debug.Log("Do something else here");
             gameObject.SetActive(false);
         }
         if (collision.gameObject.layer == 8)
         {
-            Debug.Log("hit by lazer");
-            Debug.Log("killed by fire");
+            //Debug.Log("hit by lazer");
+            //Debug.Log("killed by fire");
         }
         if (collision.gameObject.tag == "BoxesM")
         {
             //If the GameObject has the same tag as specified, output this message in the console
-            Debug.Log("Do something else here66");
+            //Debug.Log("Do something else here66");
             checkMi = true;
         }
     }

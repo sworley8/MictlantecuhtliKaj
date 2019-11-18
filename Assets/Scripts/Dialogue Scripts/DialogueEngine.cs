@@ -35,17 +35,17 @@ public class DialogueEngine : MonoBehaviour
     {
         //Debug.Log(currentScriptNum);
 
-        if (currentDialogue == 0 && dialogueTrigger && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count)
+        if (currentDialogue == 0 && dialogueTrigger && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count && !voiceAS.isPlaying)
         {
             nextDialogue();
             dialogueIsActive = true;
             dialogueTrigger = false;
-        } else if (currentDialogue > 0 && Input.GetButtonDown("Fire1") && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count)
+        } else if (currentDialogue > 0 && Input.GetButtonDown("Fire1") && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count && !voiceAS.isPlaying)
         {
             nextDialogue();
         }
 
-        else if (Input.GetButtonDown("Fire1") && currentDialogue >= currentScript.Count)
+        else if (Input.GetButtonDown("Fire1") && currentDialogue >= currentScript.Count && !voiceAS.isPlaying)
         {
             LeftTextBox.enabled = false;
             LeftNameBox.enabled = false;
