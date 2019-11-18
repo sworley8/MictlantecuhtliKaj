@@ -283,11 +283,11 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: " Andrew Han\n Sophia Worley\n\n Miranda Bisson\n Aaron Hui\n\n Anuraj Bhatnagar\n
     Andrew Han\n Sophia Worley\n\n Anuraj Bhatnagar\n\n Anuraj Bhatnagar\n Jen Hom\n\n
-    Yoon Lee\n Sophia Worley\n Unknown\n\n Miranda Bisson\n\n\n\n Brad Baker\n\n Noura
-    El Bayrouti\n\n Brandon Shockley\n\n Yoko Sarah Nakama Wong\n\n Addie Murphy\n\n
-    Tanya Churaman\n\n..\n\nHumming the Beat\nSophia Worley (Sample from )\nKarina
-    Mandock\n\nSymphony 11 Tocsin (Allegro Non Troppo) \nShostakovich\n\nCello Concerto
-    No. 1 in E flat major, Op. 107: Allegretto\nShostakovich\n\n :)"
+    Sophia Worley\n\n Miranda Bisson\n\n\n\n Brad Baker\n\n Noura El Bayrouti\n\n
+    Brandon Shockley\n\n Yoko Sarah Nakama Wong\n\n Addie Murphy\n\n Tanya Churaman\n\n\n\n
+    Humming the Beat\n Sophia Worley (Sample from )\n Karina Mandock\n\n Symphony
+    11 Tocsin\n     (Allegro Non Troppo) \n Shostakovich\n\n Cello Concerto No. 1
+    in E flat major,\n     Op. 107: Allegretto\n Shostakovich\n\n :)"
 --- !u!222 &107438748
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -439,9 +439,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Team Leads\n\n     \n3d Modelers\n\n\nProgrammers\n\n\n\nLevel Designer\n\nWriters\n\n\nSFX/Music\n\n\n\nArtist\n\nVoice
+  m_Text: "Team Leads\n\n     \n3d Modelers\n\n\nProgrammers\n\n\n\nLevel Designer\n\nWriters\n\n\nSFX\n\nArtist\n\nVoice
     Actors          \n\nMictlantecuhtli Kaj\n\nSana Socks\n\nTed Kaj\n\nThe Devil\n\nTurk\n\nDuke\n\nMusic\n\nTitle
-    Song\nProduced By\nPerformed By\n\nLevel 1 Song\nWritten By\n\nLevel 2 Song\nWritten
+    Song\nProduced By\nPerformed By\n\nLevel 1 Song\n\nWritten By\n\nLevel 2 Song\n\nWritten
     By\n\nSpecial Thanks To VGDEV "
 --- !u!222 &130599019
 CanvasRenderer:
@@ -870,7 +870,7 @@ PrefabInstance:
     - target: {fileID: 253206290092702871, guid: 0d6a18414ad1f4c9cb2050f382601965,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1665
+      value: -1950
       objectReference: {fileID: 0}
     - target: {fileID: 253206290092702871, guid: 0d6a18414ad1f4c9cb2050f382601965,
         type: 3}
