@@ -24,7 +24,7 @@ public class KamaEnemyShooting : MonoBehaviour
     void Start()
     {
         //shotLine = GetComponentInChildren<LineRenderer>;
-        kamaEnemy = GameObject.FindGameObjectWithTag("Enemy").transform;
+        //kamaEnemy = GameObject.FindGameObjectWithTag("Enemy").transform;
         scaledDamage = maxDamage - minDamage;
 
     }
@@ -64,23 +64,23 @@ public class KamaEnemyShooting : MonoBehaviour
         // This would cast rays only against colliders in layer 8.
         // But instead we want to collide against everything except layer 8. The ~ operator does this, it inverts a bitmask.
 
-        RaycastHit hit;
-        // Does the ray intersect any objects excluding the player layer
-        if (Physics.BoxCast(transform.position, new Vector3(.5f, .5f, .5f), transform.forward, out hit, transform.rotation, Mathf.Infinity, layerMask))
-        {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-            float distanceBetween = Vector3.Distance(transform.position, laser3.transform.position) / 200;
-            Debug.Log("I am : " + " and I hit: ");
-            int damage = (int)(scaledDamage * distanceBetween + minDamage);
-            if (hit.transform.tag == "Player")
-            {
-                ph.handleHealth(damage);
-            }
-        }
+        //RaycastHit hit;
+        //// Does the ray intersect any objects excluding the player layer
+        //if (Physics.BoxCast(transform.position, new Vector3(.5f, .5f, .5f), transform.forward, out hit, transform.rotation, Mathf.Infinity, layerMask))
+        //{
+        //    Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+        //    float distanceBetween = Vector3.Distance(transform.position, laser3.transform.position) / 200;
+        //    Debug.Log("I am : " + gameObject.name +  " and I hit: " + hit.transform.gameObject.name);
+        //    int damage = (int)(scaledDamage * distanceBetween + minDamage);
+        //    if (hit.transform.tag == "Player")
+        //    {
+        //        ph.handleHealth(damage);
+        //    }
+        //}
     }
     void OnDrawGizmos()
     {
         Vector3 forward = transform.forward * 10;
-        Debug.DrawRay(transform.position, forward, Color.cyan);
+        Debug.DrawRay(transform.position, transform.forward * 1000, Color.red);
     }
 }

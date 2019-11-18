@@ -18,6 +18,7 @@ public class Jun_BezierCurve : MonoBehaviour
     private int sample = 30;
     private bool isChange = true;
 
+
     public float curveLenght
     {
         get
@@ -143,11 +144,19 @@ public class Jun_BezierCurve : MonoBehaviour
         }
 
         if (pointCount < 2)
+        {
             return transform.rotation;
+        }
         if (timeValue <= 0)
+        {
             return GetPoint(0).transform.rotation;
+
+        }
         if (timeValue >= 1)
-            return isClose ? Quaternion.LookRotation(GetPoint(0).targetRotation, Vector3.up) : Quaternion.LookRotation(GetPoint(pointCount - 1).targetRotation, Vector3.up);
+        {
+            return isClose ? Quaternion.LookRotation(GetPoint(0).targetRotation, Vector3.up) : transform.rotation;
+
+        }
 
         float lenght = curveLenght;
 
