@@ -30,8 +30,10 @@ public class GameLogic : MonoBehaviour
         {
             dialogueTrigger = true;
         }
-
-        Dialogue();
+        if (dialogueEngine != null)
+        {
+            Dialogue();
+        }
     }
 
     void PauseScene()

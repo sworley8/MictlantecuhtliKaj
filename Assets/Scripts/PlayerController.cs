@@ -135,7 +135,8 @@ public class PlayerController : MonoBehaviour
     }
     void OnDrawGizmos()
     {
-
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(transform.position, 10f);
 
     }
 
@@ -147,4 +148,5 @@ public class PlayerController : MonoBehaviour
     {
         isInputEnabled = false;
     }
+
 }

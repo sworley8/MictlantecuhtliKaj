@@ -32,7 +32,7 @@ Shader "VolumetricLine/Additive" {
 			"RenderType"="Transparent"
 			"Queue"="Transparent"
 			"IgnoreProjector"="True"
-			"ForceNoShadowCasting"="True"
+			//"ForceNoShadowCasting"="True"
 			"PreviewType"="Plane"
 		}
 		LOD 200

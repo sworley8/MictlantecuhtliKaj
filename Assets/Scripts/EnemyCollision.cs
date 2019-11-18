@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Jun_TweenRuntime))]
 public class EnemyCollision : MonoBehaviour
 {
     public static bool checkIn = false;
@@ -13,7 +12,10 @@ public class EnemyCollision : MonoBehaviour
     void Start()
     {
         enemyBezierCurve = GetComponent<Jun_TweenRuntime>();
-        enemyBezierCurve.Pause();
+        if (enemyBezierCurve != null)
+        {
+            enemyBezierCurve.Pause();
+        }
     }
 
     // Update is called once per frame
@@ -26,6 +28,7 @@ public class EnemyCollision : MonoBehaviour
         //Debug.Log("Do something else here11");
         if (collision.gameObject.tag == "EnemyActivation")
         {
+            Debug.Log("ACTIVATED: " + gameObject.name);
             enemyBezierCurve.Resume();
 
         }
@@ -45,6 +48,7 @@ public class EnemyCollision : MonoBehaviour
             //If the GameObject has the same tag as specified, output this message in the console
             //Debug.Log("Do something else here66");
             checkMi = true;
+            Debug.Log("Exclamation");
         }
     }
 }
