@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ChangeMenu : MonoBehaviour
 {
-    public float timerBack = 20f;
+    public float timerBack = 120f;
     GameObject backgroundImage;
     GameObject backgroundImage2;
     // Start is called before the first frame update
@@ -24,12 +24,12 @@ public class ChangeMenu : MonoBehaviour
             if (backgroundImage.activeSelf == true)
             {
                 backgroundImage.SetActive(false);
-                timerBack = 20f + +Time.deltaTime;
+                timerBack = 120f + +Time.deltaTime;
             }
             if (backgroundImage2.activeSelf == true)
             {
                 backgroundImage2.SetActive(false);
-                timerBack = 20f + +Time.deltaTime;
+                timerBack = 120f + +Time.deltaTime;
             }
         }
     }

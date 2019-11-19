@@ -12,6 +12,11 @@ public class PlayGame : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
     }
+    public void menuKaj()
+    {
+        SceneManager.LoadScene(1);
+
+    }
     public void creditKaj()
     {
         SceneManager.LoadScene(1);

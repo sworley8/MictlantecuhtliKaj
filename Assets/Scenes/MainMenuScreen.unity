@@ -2411,7 +2411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4268c4328de4c5da876a5803bf8f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerBack: 20
+  timerBack: 120
 --- !u!4 &751651390 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 415032, guid: c4c676882c56a429b9fb9b5130f39f8a,
@@ -3849,7 +3849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4268c4328de4c5da876a5803bf8f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerBack: 0.05
+  timerBack: 120
 --- !u!4 &1162958423 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4274653050354540, guid: e55149ba6f4d00741984987e258c3378,

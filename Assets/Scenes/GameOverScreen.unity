@@ -906,7 +906,7 @@ PrefabInstance:
     - target: {fileID: 253206290092702870, guid: 0d6a18414ad1f4c9cb2050f382601965,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: playKaj
+      value: menuKaj
       objectReference: {fileID: 0}
     - target: {fileID: 253206289976074759, guid: 0d6a18414ad1f4c9cb2050f382601965,
         type: 3}
