@@ -13,7 +13,7 @@ public class GuideChange : MonoBehaviour
     }
     public void guideKaj()
     {
-        SceneManager.LoadScene(9999);
+        //SceneManager.LoadScene(9999);
 
     }
 }
