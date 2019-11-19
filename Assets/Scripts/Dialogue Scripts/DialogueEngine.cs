@@ -7,7 +7,7 @@ public class DialogueEngine : MonoBehaviour
 {
     // Start is called before the first frame update
     public List<DialogueListContainer> Scripts = new List<DialogueListContainer>();
-    private List<DialogueObject> currentScript;
+    public List<DialogueObject> currentScript;
     public Image CanvasImageLeft;
     public Image CanvasImageRight;
     public Image DialogueBox;
@@ -17,11 +17,11 @@ public class DialogueEngine : MonoBehaviour
     public bool dialogueTrigger = false;
     public bool dialogueIsActive = false;
 
-    private int currentDialogue = 0;
+    public int currentDialogue = 0;
     private int currentScriptNum = 0;
     public AudioSource voiceAS;
 
-
+    public bool isEnded = false;
 
     void Start()
     {
@@ -60,6 +60,7 @@ public class DialogueEngine : MonoBehaviour
                 currentScript = Scripts[currentScriptNum].Script;
             }
             dialogueIsActive = false;
+            isEnded = true;
         }
         
     }
