@@ -245,8 +245,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 329, y: -670.27}
-  m_SizeDelta: {x: 658, y: 1714.4}
+  m_AnchoredPosition: {x: 329, y: -688}
+  m_SizeDelta: {x: 658, y: 1749}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &107438747
 MonoBehaviour:
@@ -283,11 +283,12 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: " Andrew Han\n Sophia Worley\n\n Miranda Bisson\n Aaron Hui\n\n Anuraj Bhatnagar\n
     Andrew Han\n Sophia Worley\n\n Anuraj Bhatnagar\n\n Anuraj Bhatnagar\n Jen Hom\n\n
-    Sophia Worley\n\n Miranda Bisson\n\n\n\n Brad Baker\n\n Noura El Bayrouti\n\n
-    Brandon Shockley\n\n Yoko Sarah Nakama Wong\n\n Addie Murphy\n\n Tanya Churaman\n\n\n\n
-    Humming the Beat\n Sophia Worley (Sample from )\n Karina Mandock\n\n Symphony
-    11 Tocsin\n     (Allegro Non Troppo) \n Shostakovich\n\n Cello Concerto No. 1
-    in E flat major,\n     Op. 107: Allegretto\n Shostakovich\n\n :)"
+    Sophia Worley\n\n Miranda Bisson\n Nandan Gouri\n\n\n\n Brad Baker\n\n Noura El
+    Bayrouti\n\n Brandon Shockley\n\n Yoko Sarah Nakama Wong\n\n Addie Murphy\n\n
+    Tanya Churaman\n\n\n\n Humming the Beat\n Sophia Worley (Sample from )\n Karina
+    Mandock & Yoko Sarah Nakama Wong\n\n Symphony 11 Tocsin\n     (Allegro Non Troppo)
+    \n Shostakovich\n\n Cello Concerto No. 1 in E flat major,\n     Op. 107: Allegretto\n
+    Shostakovich\n\n :)"
 --- !u!222 &107438748
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -416,8 +417,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -158, y: -671}
-  m_SizeDelta: {x: 315, y: 1713}
+  m_AnchoredPosition: {x: -158, y: -688}
+  m_SizeDelta: {x: 315, y: 1748}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &130599018
 MonoBehaviour:
@@ -452,7 +453,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Team Leads\n\n     \n3d Modelers\n\n\nProgrammers\n\n\n\nLevel Designer\n\nWriters\n\n\nSFX\n\nArtist\n\nVoice
+  m_Text: "Team Leads\n\n     \n3d Modelers\n\n\nProgrammers\n\n\n\nLevel Designer\n\nWriters\n\n\nSFX\n\nArtist\n\n\nVoice
     Actors          \n\nMictlantecuhtli Kaj\n\nSana Socks\n\nTed Kaj\n\nThe Devil\n\nTurk\n\nDuke\n\nMusic\n\nTitle
     Song\nProduced By\nPerformed By\n\nLevel 1 Song\n\nWritten By\n\nLevel 2 Song\n\nWritten
     By\n\nSpecial Thanks To VGDEV "
