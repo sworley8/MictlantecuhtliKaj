@@ -5431,6 +5431,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 302524786}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &270141147 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4126298368791050833, guid: de0107726c5934efa9ccf089ec5c3f6d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1760085278}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &272567871
 GameObject:
   m_ObjectHideFlags: 0
@@ -16677,10 +16689,6 @@ GameObject:
   - component: {fileID: 1644648489}
   - component: {fileID: 1644648488}
   - component: {fileID: 1644648487}
-  - component: {fileID: 1644648486}
-  - component: {fileID: 1644648485}
-  - component: {fileID: 1644648491}
-  - component: {fileID: 1644648492}
   m_Layer: 0
   m_Name: Ted
   m_TagString: Untagged
@@ -16688,34 +16696,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1644648485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644648484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be568b02e32cfd647985262bf9db3279, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeUntilFire: 1
-  missile1: {fileID: 0}
-  missile2: {fileID: 0}
---- !u!114 &1644648486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644648484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46201cf4d6f3e48249e04700dcec3888, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyBezierCurve: {fileID: 0}
 --- !u!65 &1644648487
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16790,87 +16770,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1644648491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644648484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 411dcac04aff248c4b98f1feb5595fb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_onFinish:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Jun_TweenRuntime+OnFinish, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  m_isRotate: 0
-  playType: 0
-  animationTime: 30
-  enablePlay: 0
-  awakePlay: 1
-  lgnoreTimeScale: 1
-  randomStartValue: 0
-  isPause: 0
-  totalPauseTime: 0
-  totalUnscaledPauseTime: 0
-  startValue: 0
-  _previewValue: 0.87871933
-  tweens:
-  - _tweenType: 6
-    _isSelf: 1
-    _tweenObject: {fileID: 1644648490}
-    _curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    _minAnimationTime: 0
-    _maxAnimationTime: 1
-    _isLocal: 1
-    _fromVector: {x: 0, y: 0, z: 0}
-    _toVector: {x: 0, y: 0, z: 0}
-    _fromColor: {r: 1, g: 1, b: 1, a: 1}
-    _toColor: {r: 1, g: 1, b: 1, a: 1}
-    _fromFloat: 0
-    _toFloat: 0
-    _bezierCurve: {fileID: 0}
---- !u!114 &1644648492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644648484}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c12794652d5ee407d809895cb9041f18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  originalRotationVal: {x: 0, y: 0, z: 0, w: 0}
-  velocity: 1
 --- !u!1 &1647580901
 GameObject:
   m_ObjectHideFlags: 0
@@ -17348,6 +17247,11 @@ PrefabInstance:
       propertyPath: cutsceneEngine
       value: 
       objectReference: {fileID: 384754232}
+    - target: {fileID: 3213676428428169373, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: NextIndicatorArrow
+      value: 
+      objectReference: {fileID: 270141147}
     - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: dialogue

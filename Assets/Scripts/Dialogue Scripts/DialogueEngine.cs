@@ -12,6 +12,7 @@ public class DialogueEngine : MonoBehaviour
     public Image CanvasImageRight;
     public Image DialogueBox;
     public Image LeftNameBox;
+    public Image NextIndicatorArrow;
     public Text LeftTextBox;
     public Text textBox;
     public bool dialogueTrigger = false;
@@ -28,6 +29,7 @@ public class DialogueEngine : MonoBehaviour
 
     void Start()
     {
+        NextIndicatorArrow.enabled = false;
         LeftNameBox.enabled = false;
         LeftTextBox.enabled = false;
         currentScript = Scripts[currentScriptNum].Script;
@@ -45,6 +47,15 @@ public class DialogueEngine : MonoBehaviour
         } else
         {
             dialogueWait = !voiceAS.isPlaying;
+        }
+
+        if (dialogueIsActive && !voiceAS.isPlaying)
+        {
+            NextIndicatorArrow.enabled = true;
+
+        } else
+        {
+            NextIndicatorArrow.enabled = false;
         }
         if (currentDialogue == 0 && dialogueTrigger && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count && dialogueWait)
         {
