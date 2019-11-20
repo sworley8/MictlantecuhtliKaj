@@ -45,7 +45,6 @@ public class DialogueEngine : MonoBehaviour
         } else if (currentDialogue > 0 && Input.GetButtonDown("Fire1") && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count && !voiceAS.isPlaying)
         {
             nextDialogue();
-            doneTalking = true;
             cutsceneEngine.activateNextCutscene();
         }
 
