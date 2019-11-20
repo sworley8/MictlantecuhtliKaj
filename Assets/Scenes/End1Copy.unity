@@ -1178,7 +1178,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 3a80d3a4559d63444b7dac319b585fdf, type: 2}
   m_InitialState: 0
-  m_WrapMode: 2
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -1764,7 +1764,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 575af2a658841854abad1f3e3a8d7687, type: 2}
   m_InitialState: 0
-  m_WrapMode: 2
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -2736,17 +2736,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 4d56866beb26e492eae29c49457270be,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.88
+      value: -3.07
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4d56866beb26e492eae29c49457270be,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.7
+      value: 4.04
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4d56866beb26e492eae29c49457270be,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 38.45
+      value: 45.9
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4d56866beb26e492eae29c49457270be,
         type: 3}
@@ -2791,17 +2791,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 4d56866beb26e492eae29c49457270be,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.028770221
+      value: 0.00840924
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4d56866beb26e492eae29c49457270be,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.028770221
+      value: 0.00840924
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4d56866beb26e492eae29c49457270be,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.028770221
+      value: 0.00840924
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d56866beb26e492eae29c49457270be, type: 3}
@@ -3774,6 +3774,9 @@ MonoBehaviour:
   - {fileID: 974134140}
   dialogueEngine: {fileID: 559070830}
   activationCount: 2
+  ctr: 0
+  voiceAS: {fileID: 2023844885}
+  dialogue: {fileID: 559070830}
 --- !u!4 &2047551981
 Transform:
   m_ObjectHideFlags: 0
@@ -4013,6 +4016,11 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.b
       value: 0.254717
       objectReference: {fileID: 0}
+    - target: {fileID: 7563854551274080978, guid: d48ed5635d00c994b8a63acda61b8ab6,
+        type: 3}
+      propertyPath: tweens.Array.data[0]._bezierCurve
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7563854550750197948, guid: d48ed5635d00c994b8a63acda61b8ab6,
         type: 3}
       propertyPath: m_LocalRotation.z
@@ -4068,16 +4076,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 7563854551413217594, guid: d48ed5635d00c994b8a63acda61b8ab6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7563854551791604714, guid: d48ed5635d00c994b8a63acda61b8ab6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7563854552388848361, guid: d48ed5635d00c994b8a63acda61b8ab6,
         type: 3}
       propertyPath: m_IsActive
@@ -4088,10 +4086,15 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7563854551274080978, guid: d48ed5635d00c994b8a63acda61b8ab6,
+    - target: {fileID: 7563854551413217594, guid: d48ed5635d00c994b8a63acda61b8ab6,
         type: 3}
-      propertyPath: tweens.Array.data[0]._bezierCurve
-      value: 
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7563854551791604714, guid: d48ed5635d00c994b8a63acda61b8ab6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7563854552388848363, guid: d48ed5635d00c994b8a63acda61b8ab6, type: 3}

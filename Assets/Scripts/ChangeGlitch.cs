@@ -10,6 +10,7 @@ public class ChangeGlitch : MonoBehaviour
     GameObject backgroundImage2;
     GameObject ember;
     GameObject bubbles;
+    public AudioSource song;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,12 +32,14 @@ public class ChangeGlitch : MonoBehaviour
                 bubbles.SetActive(true);
                 backgroundImage1.SetActive(true);
                 ember.SetActive(false);
+                song.Play();
             }
             if (bubbles.activeSelf == true && backgroundImage1.activeSelf == false)
             {
                 ember.SetActive(true);
                 backgroundImage2.SetActive(true);
                 bubbles.SetActive(false);
+                song.Play();
             }
             else
             {
