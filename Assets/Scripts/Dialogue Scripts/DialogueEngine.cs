@@ -16,7 +16,6 @@ public class DialogueEngine : MonoBehaviour
     public Text textBox;
     public bool dialogueTrigger = false;
     public bool dialogueIsActive = false;
-    public bool doneTalking = false;
 
     public int currentDialogue = 0;
     private int currentScriptNum = 0;
@@ -42,7 +41,6 @@ public class DialogueEngine : MonoBehaviour
             nextDialogue();
             dialogueIsActive = true;
             dialogueTrigger = false;
-            doneTalking = true;
             cutsceneEngine.activateNextCutscene();
         } else if (currentDialogue > 0 && Input.GetButtonDown("Fire1") && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count && !voiceAS.isPlaying)
         {
@@ -82,7 +80,6 @@ public class DialogueEngine : MonoBehaviour
         textBox.enabled = true;
         textBox.text = currentScript[currentDialogue].dialogue;
         voiceAS.clip = currentScript[currentDialogue].voiceClip;
-        doneTalking = false;
         voiceAS.Play();
         LeftTextBox.enabled = true;
         LeftTextBox.text = currentScript[currentDialogue].speakerName;
