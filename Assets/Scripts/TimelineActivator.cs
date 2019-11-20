@@ -10,6 +10,8 @@ public class TimelineActivator : MonoBehaviour
     public DialogueEngine dialogueEngine;
     public int activationCount;
     public int ctr = 0;//because time is short
+    public AudioSource voiceAS;
+    public DialogueEngine dialogue;
     private void Update()
     {
         TimelineControl();
@@ -18,9 +20,11 @@ public class TimelineActivator : MonoBehaviour
     private void TimelineControl()
     {
         int i = 0;
-        if (Input.GetButtonDown("Fire1"))
+        //&& !voiceAS.isPlaying
+        if (Input.GetButtonDown("Fire1") && dialogue.dialogueIsActive)
         {
             ctr++;
+            Debug.Log(dialogue.doneTalking);
         }
         if (ctr >= activationCount)
         {

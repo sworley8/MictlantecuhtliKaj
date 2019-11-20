@@ -8,6 +8,7 @@ public class ChangeMenu : MonoBehaviour
     public float timerBack = 120f;
     GameObject backgroundImage;
     GameObject backgroundImage2;
+    public AudioSource song;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,11 +25,13 @@ public class ChangeMenu : MonoBehaviour
             if (backgroundImage.activeSelf == true)
             {
                 backgroundImage.SetActive(false);
+                song.Pause();
                 timerBack = 120f + +Time.deltaTime;
             }
             if (backgroundImage2.activeSelf == true)
             {
                 backgroundImage2.SetActive(false);
+                song.Pause();
                 timerBack = 120f + +Time.deltaTime;
             }
         }
