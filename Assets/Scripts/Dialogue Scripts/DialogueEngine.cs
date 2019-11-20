@@ -25,6 +25,8 @@ public class DialogueEngine : MonoBehaviour
     public bool isEnded = false;
     public TimelineActivatorRevised cutsceneEngine;
 
+    public bool isWaitForDialogue = true;
+
     void Start()
     {
         LeftNameBox.enabled = false;
@@ -36,22 +38,30 @@ public class DialogueEngine : MonoBehaviour
     void Update()
     {
         //Debug.Log(currentScriptNum);
+        bool dialogueWait;
 
-        if (currentDialogue == 0 && dialogueTrigger && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count && !voiceAS.isPlaying)
+        if (!isWaitForDialogue)
+        {
+            dialogueWait = true;
+        } else
+        {
+            dialogueWait = !voiceAS.isPlaying;
+        }
+        if (currentDialogue == 0 && dialogueTrigger && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count && dialogueWait)
         {
             nextDialogue();
             dialogueIsActive = true;
             dialogueTrigger = false;
             doneTalking = true;
             //cutsceneEngine.activateNextCutscene();
-        } else if (currentDialogue > 0 && Input.GetButtonDown("Fire1") && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count && !voiceAS.isPlaying)
+        } else if (currentDialogue > 0 && Input.GetButtonDown("Fire1") && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count && dialogueWait)
         {
             nextDialogue();
             doneTalking = true;
             //cutsceneEngine.activateNextCutscene();
         }
 
-        else if (Input.GetButtonDown("Fire1") && currentDialogue >= currentScript.Count && !voiceAS.isPlaying)
+        else if (Input.GetButtonDown("Fire1") && currentDialogue >= currentScript.Count && dialogueWait)
         {
             LeftTextBox.enabled = false;
             LeftNameBox.enabled = false;
