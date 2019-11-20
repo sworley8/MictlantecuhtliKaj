@@ -9,7 +9,7 @@ public class TimelineActivator : MonoBehaviour
     public List<PlayableDirector> playableDirector;//scalability for the possible future NOTE- this script currently only supports two timelines
     public DialogueEngine dialogueEngine;
     public int activationCount;
-    int ctr = 0;//because time is short
+    public int ctr = 0;//because time is short
     private void Update()
     {
         TimelineControl();
