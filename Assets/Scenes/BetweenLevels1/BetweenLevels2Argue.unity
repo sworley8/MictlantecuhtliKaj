@@ -1605,6 +1605,11 @@ PrefabInstance:
       propertyPath: cutsceneEngine
       value: 
       objectReference: {fileID: 2839849982341669488}
+    - target: {fileID: 3213676428428169373, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: isWaitForDialogue
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: image1
@@ -1673,99 +1678,6 @@ PrefabInstance:
       propertyPath: voiceClip
       value: 
       objectReference: {fileID: 8300000, guid: bbd74d3c1a8ef480dafd4957cc6d97c0, type: 3}
-    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: image1
-      value: 
-      objectReference: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d,
-        type: 3}
-    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: image2
-      value: 
-      objectReference: {fileID: 21300000, guid: 4dbc8d9d5fd563f428284387aff94040,
-        type: 3}
-    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speakerName
-      value: Sana
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: dialogue
-      value: You're one to talk. All I ever wanted was to spend time with my son,
-        but he was always with you!
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: voiceClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 9b4678a8fbd35a54886f895c45b8a8c0, type: 3}
-    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speaker
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: voiceClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 368be5fa2c4834ce4a7dce86324d6d6b, type: 3}
-    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: dialogue
-      value: 'How could you say that? Ted is the one who matters. He should make the
-        decision who to be with. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: image2
-      value: 
-      objectReference: {fileID: 21300000, guid: 4dbc8d9d5fd563f428284387aff94040,
-        type: 3}
-    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speaker
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: image1
-      value: 
-      objectReference: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d,
-        type: 3}
-    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speakerName
-      value: Mictlantecuhtli
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: dialogue
-      value: 'You would''ve made sure he decided to be with you! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: voiceClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 27cf46c2feb5f5a4cb163cabc519187a, type: 3}
-    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: image2
-      value: 
-      objectReference: {fileID: 21300000, guid: 4dbc8d9d5fd563f428284387aff94040,
-        type: 3}
-    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: image1
-      value: 
-      objectReference: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d,
-        type: 3}
-    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speaker
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3213676428428169374, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2009,6 +1921,99 @@ PrefabInstance:
         type: 3}
       propertyPath: speaker
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: image1
+      value: 
+      objectReference: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d,
+        type: 3}
+    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4dbc8d9d5fd563f428284387aff94040,
+        type: 3}
+    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speakerName
+      value: Sana
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: dialogue
+      value: You're one to talk. All I ever wanted was to spend time with my son,
+        but he was always with you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9b4678a8fbd35a54886f895c45b8a8c0, type: 3}
+    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 368be5fa2c4834ce4a7dce86324d6d6b, type: 3}
+    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: dialogue
+      value: 'How could you say that? Ted is the one who matters. He should make the
+        decision who to be with. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4dbc8d9d5fd563f428284387aff94040,
+        type: 3}
+    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: image1
+      value: 
+      objectReference: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d,
+        type: 3}
+    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speakerName
+      value: Mictlantecuhtli
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: dialogue
+      value: 'You would''ve made sure he decided to be with you! '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 27cf46c2feb5f5a4cb163cabc519187a, type: 3}
+    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4dbc8d9d5fd563f428284387aff94040,
+        type: 3}
+    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: image1
+      value: 
+      objectReference: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d,
+        type: 3}
+    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speaker
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de0107726c5934efa9ccf089ec5c3f6d, type: 3}
@@ -14938,6 +14943,90 @@ Transform:
   m_Father: {fileID: 237769907}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -5.8614736, y: -4.428142, z: -142.80121}
+--- !u!1001 &1485167608
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 82042338888960366, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_Name
+      value: TimelineSceneChangerMovement
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.257385
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.377613
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 32.927185
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899551139738949890, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: di
+      value: 
+      objectReference: {fileID: 433324643}
+    - target: {fileID: 4899551139738949890, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: timey
+      value: 
+      objectReference: {fileID: 2839849982341669488}
+    - target: {fileID: 4899551139738949890, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: SceneNumber
+      value: 15
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 322bb6d3986f149448a1e601cfa68205, type: 3}
 --- !u!1 &1488762547
 GameObject:
   m_ObjectHideFlags: 0

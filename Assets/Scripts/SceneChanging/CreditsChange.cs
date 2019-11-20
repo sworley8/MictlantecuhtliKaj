@@ -7,6 +7,6 @@ public class CreditsChange : MonoBehaviour
 {
     public void creditKaj()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(0);
     }
 }

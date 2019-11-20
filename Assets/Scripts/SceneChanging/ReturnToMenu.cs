@@ -16,7 +16,7 @@ public class ReturnToMenu : MonoBehaviour
     {
         if (Input.GetButtonDown("Submit"))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
     }
     //public void returnToMenuKaj()

@@ -30,7 +30,7 @@ public class Level1To2Change : MonoBehaviour
         {
             //If the GameObject has the same tag as specified, output this message in the console
             //Debug.Log("Do something else here");
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(6);
         }
         //if (collision.gameObject.layer == 8)
         //{

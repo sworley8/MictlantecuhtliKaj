@@ -193,7 +193,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Save Ted
 
-    Press '
+    Press A'
 --- !u!222 &64433569
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15037,7 +15037,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Don''t Save Ted
 
-    Press'
+    Press B'
 --- !u!222 &1767890799
 CanvasRenderer:
   m_ObjectHideFlags: 0

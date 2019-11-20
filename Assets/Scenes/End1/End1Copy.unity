@@ -1100,6 +1100,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 154915062}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &157362096
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 82042338888960366, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_Name
+      value: TimelineSceneChangerMovement
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.257385
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.377613
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 32.927185
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422694992038419147, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899551139738949890, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: di
+      value: 
+      objectReference: {fileID: 988496158}
+    - target: {fileID: 4899551139738949890, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: timey
+      value: 
+      objectReference: {fileID: 357455686835204318}
+    - target: {fileID: 4899551139738949890, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: SceneNumber
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 322bb6d3986f149448a1e601cfa68205, type: 3}
 --- !u!4 &165291084 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3213676427155375047, guid: de0107726c5934efa9ccf089ec5c3f6d,
@@ -7388,7 +7472,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 357455686835204319}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &974134139
 Animator:
@@ -13486,7 +13570,7 @@ PrefabInstance:
     - target: {fileID: 3213676428428169373, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: isWaitForDialogue
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3213676428428169373, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
@@ -13555,91 +13639,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: c5162bbe6919ee140aad01fad41304f5, type: 3}
     - target: {fileID: 3213676428409007166, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speaker
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speakerName
-      value: Mictlantecuhtli
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: dialogue
-      value: Nooooooo! Ted! Nooooooo!
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: image1
-      value: 
-      objectReference: {fileID: 21300000, guid: 83973e7ecea584a20bbbc6ee1c5fbe4a,
-        type: 3}
-    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: voiceClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 3770f8c3ddc7744dfa6387cd3b1502e7, type: 3}
-    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: dialogue
-      value: 'Nothing can be taken back. You won''t be getting your son back. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speaker
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speakerName
-      value: DEViL
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: image1
-      value: 
-      objectReference: {fileID: 21300000, guid: 83973e7ecea584a20bbbc6ee1c5fbe4a,
-        type: 3}
-    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: image2
-      value: 
-      objectReference: {fileID: 21300000, guid: c7b75ab8eb8de4abcbdd23ff92188309,
-        type: 3}
-    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: voiceClip
-      value: 
-      objectReference: {fileID: 8300000, guid: a1580ed9be7f1469d8f219465b25190b, type: 3}
-    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: dialogue
-      value: Hahaha, thanks for your sacrifice.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speakerName
-      value: DEViL
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: image1
-      value: 
-      objectReference: {fileID: 21300000, guid: 83973e7ecea584a20bbbc6ee1c5fbe4a,
-        type: 3}
-    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: image2
-      value: 
-      objectReference: {fileID: 21300000, guid: c7b75ab8eb8de4abcbdd23ff92188309,
-        type: 3}
-    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: voiceClip
-      value: 
-      objectReference: {fileID: 8300000, guid: fb4f5ece5708a19459dd119e5cd9f363, type: 3}
-    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: speaker
       value: 1
@@ -13880,6 +13879,91 @@ PrefabInstance:
       propertyPath: voiceClip
       value: 
       objectReference: {fileID: 8300000, guid: 63bb11f24d4f540d4989e470513c01a1, type: 3}
+    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speakerName
+      value: Mictlantecuhtli
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: dialogue
+      value: Nooooooo! Ted! Nooooooo!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: image1
+      value: 
+      objectReference: {fileID: 21300000, guid: 83973e7ecea584a20bbbc6ee1c5fbe4a,
+        type: 3}
+    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3770f8c3ddc7744dfa6387cd3b1502e7, type: 3}
+    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: dialogue
+      value: 'Nothing can be taken back. You won''t be getting your son back. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speakerName
+      value: DEViL
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: image1
+      value: 
+      objectReference: {fileID: 21300000, guid: 83973e7ecea584a20bbbc6ee1c5fbe4a,
+        type: 3}
+    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 21300000, guid: c7b75ab8eb8de4abcbdd23ff92188309,
+        type: 3}
+    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a1580ed9be7f1469d8f219465b25190b, type: 3}
+    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: dialogue
+      value: Hahaha, thanks for your sacrifice.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speakerName
+      value: DEViL
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: image1
+      value: 
+      objectReference: {fileID: 21300000, guid: 83973e7ecea584a20bbbc6ee1c5fbe4a,
+        type: 3}
+    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 21300000, guid: c7b75ab8eb8de4abcbdd23ff92188309,
+        type: 3}
+    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fb4f5ece5708a19459dd119e5cd9f363, type: 3}
+    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speaker
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de0107726c5934efa9ccf089ec5c3f6d, type: 3}
 --- !u!1 &1887857817 stripped
@@ -13960,11 +14044,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 182.505
       objectReference: {fileID: 0}
-    - target: {fileID: 4242421939605777096, guid: 5e28f5ab2427a4ff0a36e7a4a96e6646,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1614789198610746071, guid: 5e28f5ab2427a4ff0a36e7a4a96e6646,
         type: 3}
       propertyPath: m_Enabled
@@ -13973,6 +14052,26 @@ PrefabInstance:
     - target: {fileID: 38375273012369341, guid: 5e28f5ab2427a4ff0a36e7a4a96e6646,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242421939605777096, guid: 5e28f5ab2427a4ff0a36e7a4a96e6646,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556742223001396383, guid: 5e28f5ab2427a4ff0a36e7a4a96e6646,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556742223001396383, guid: 5e28f5ab2427a4ff0a36e7a4a96e6646,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556742223001396383, guid: 5e28f5ab2427a4ff0a36e7a4a96e6646,
+        type: 3}
+      propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 506461366592689804, guid: 5e28f5ab2427a4ff0a36e7a4a96e6646,
@@ -14745,14 +14844,14 @@ MonoBehaviour:
   - {fileID: 357455686573032766}
   - {fileID: 357455686573032766}
   - {fileID: 751118887}
-  - {fileID: 357455686573032766}
-  - {fileID: 357455686573032766}
-  - {fileID: 357455686573032766}
-  - {fileID: 357455686573032766}
-  - {fileID: 357455686573032766}
-  - {fileID: 357455686573032766}
-  - {fileID: 357455686573032766}
-  - {fileID: 357455686573032766}
+  - {fileID: 7382901600305660364}
+  - {fileID: 7382901600305660364}
+  - {fileID: 7382901600305660364}
+  - {fileID: 7382901600305660364}
+  - {fileID: 7382901600305660364}
+  - {fileID: 7382901600305660364}
+  - {fileID: 7382901600305660364}
+  - {fileID: 7382901600305660364}
   - {fileID: 974134140}
   activationCount: 0
 --- !u!4 &357455686835204319
@@ -14768,7 +14867,78 @@ Transform:
   m_Children:
   - {fileID: 357455686573032767}
   - {fileID: 751118886}
+  - {fileID: 7382901600305660366}
   - {fileID: 974134138}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &7382901600305660364
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7382901600305660365}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 747e8ce5184b9f84a8679b38cbc9dfbc, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 0
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 6540251738994441212, guid: 747e8ce5184b9f84a8679b38cbc9dfbc, type: 2}
+    value: {fileID: 1753614088}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1 &7382901600305660365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7382901600305660366}
+  - component: {fileID: 7382901600305660364}
+  - component: {fileID: 7382901600305660367}
+  m_Layer: 0
+  m_Name: DevilAppears
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7382901600305660366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7382901600305660365}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.2684, y: -4.7306466, z: 13.789206}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 357455686835204319}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &7382901600305660367
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7382901600305660365}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

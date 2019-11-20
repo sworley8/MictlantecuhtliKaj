@@ -8,12 +8,12 @@ public class GuideChange : MonoBehaviour
     //public float timerBack = 20f;
     public void menuKaj()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(0);
 
     }
     public void guideKaj()
     {
-        //SceneManager.LoadScene(9999);
+        SceneManager.LoadScene(14);
 
     }
 }

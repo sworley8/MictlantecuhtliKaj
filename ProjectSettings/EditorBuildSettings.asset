@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenuScreen.unity
+    guid: 8e1085fd0be1c4409948f53f1a6730ee
+  - enabled: 1
     path: Assets/Scenes/GameOverScreen.unity
     guid: a0f0267cde7bcd2469afe6ff913b62df
   - enabled: 1
@@ -15,12 +18,42 @@ EditorBuildSettings:
     path: Assets/Scenes/Character Controller.unity
     guid: 772628e6093668643bca50fbd6d02a80
   - enabled: 1
-    path: Assets/Scenes/MainMenuScreen.unity
-    guid: 8e1085fd0be1c4409948f53f1a6730ee
-  - enabled: 1
     path: Assets/Scenes/Level1Prototype (Experimental).unity
     guid: 17579f95f5cdb204392285b6be4915c8
   - enabled: 1
     path: Assets/Scenes/Level2Prototype.unity
     guid: 7caa61f3e10a6444888b5a67ac153708
+  - enabled: 1
+    path: Assets/Scenes/BetweenLevels1/BetweenLevels1.unity
+    guid: 8a78db5f0b6094b7d88172bdc13441ec
+  - enabled: 1
+    path: Assets/Scenes/End1/End1Copy.unity
+    guid: ca19d8ed22c8ab8409238579971e0370
+  - enabled: 1
+    path: Assets/Scenes/End2/End2Copy 1.unity
+    guid: d7c7bc60fc3cd374f90f4bdd5aaf1e7e
+  - enabled: 1
+    path: Assets/Scenes/CommonEnding/Common Ending.unity
+    guid: 662366c76ed7046aca457f1e6566b16a
+  - enabled: 1
+    path: Assets/Scenes/Coral Park/Coral Park.unity
+    guid: c2f8666376d9645cf8d594276b9427c5
+  - enabled: 1
+    path: Assets/Scenes/Coral Park Argument/Coral Park Argue.unity
+    guid: e4bc1613380f5475aae57c00a7ade177
+  - enabled: 1
+    path: Assets/Scenes/DealWithTheDevil/DealWithDevil.unity
+    guid: 23a7ad7f830df418e9018f8936c4fb57
+  - enabled: 1
+    path: Assets/Scenes/The Beg/The Beg Final.unity
+    guid: 93e6cad5abed4ba49a0269d47db5e78b
+  - enabled: 1
+    path: Assets/Scenes/GuideScreen.unity
+    guid: 2c2456bb66a924eee935ec7da3a57aa6
+  - enabled: 1
+    path: Assets/Scenes/Level2Prototype Changed.unity
+    guid: 94f700760ec2f41f0b7e31ab2dc07fbc
+  - enabled: 1
+    path: Assets/Scenes/BetweenLevels1/BetweenLevels2Argue.unity
+    guid: 97f03c9296e4844d3bb40c3078fa819b
   m_configObjects: {}

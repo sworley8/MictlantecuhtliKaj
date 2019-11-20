@@ -377,11 +377,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 199176809758892682, guid: e55149ba6f4d00741984987e258c3378,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 198533276141313876, guid: e55149ba6f4d00741984987e258c3378,
         type: 3}
       propertyPath: EmissionModule.enabled
@@ -405,6 +400,11 @@ PrefabInstance:
     - target: {fileID: 198533276141313876, guid: e55149ba6f4d00741984987e258c3378,
         type: 3}
       propertyPath: CustomDataModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199176809758892682, guid: e55149ba6f4d00741984987e258c3378,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -714,7 +714,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Switch Controls:\n   Use joystick to move around\n   Press Y to shoot\n
+  m_text: "Switch Controls:\n   Use joystick to move around\n   Press A to shoot\n
     \  Press Home to go to Menu\n   Press B for next dialouge (for cutscenes)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d91dff4038694b1480d290ceb342ad6, type: 2}
@@ -1286,11 +1286,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 199176809758892682, guid: e55149ba6f4d00741984987e258c3378,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 198533276141313876, guid: e55149ba6f4d00741984987e258c3378,
         type: 3}
       propertyPath: EmissionModule.enabled
@@ -1314,6 +1309,11 @@ PrefabInstance:
     - target: {fileID: 198533276141313876, guid: e55149ba6f4d00741984987e258c3378,
         type: 3}
       propertyPath: CustomDataModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199176809758892682, guid: e55149ba6f4d00741984987e258c3378,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1657,11 +1657,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 199176809758892682, guid: e55149ba6f4d00741984987e258c3378,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 198533276141313876, guid: e55149ba6f4d00741984987e258c3378,
         type: 3}
       propertyPath: EmissionModule.enabled
@@ -1685,6 +1680,11 @@ PrefabInstance:
     - target: {fileID: 198533276141313876, guid: e55149ba6f4d00741984987e258c3378,
         type: 3}
       propertyPath: CustomDataModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199176809758892682, guid: e55149ba6f4d00741984987e258c3378,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3072,11 +3072,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 199176809758892682, guid: e55149ba6f4d00741984987e258c3378,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 198533276141313876, guid: e55149ba6f4d00741984987e258c3378,
         type: 3}
       propertyPath: EmissionModule.enabled
@@ -3100,6 +3095,11 @@ PrefabInstance:
     - target: {fileID: 198533276141313876, guid: e55149ba6f4d00741984987e258c3378,
         type: 3}
       propertyPath: CustomDataModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199176809758892682, guid: e55149ba6f4d00741984987e258c3378,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3830,11 +3830,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 199176809758892682, guid: e55149ba6f4d00741984987e258c3378,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 198533276141313876, guid: e55149ba6f4d00741984987e258c3378,
         type: 3}
       propertyPath: EmissionModule.enabled
@@ -3858,6 +3853,11 @@ PrefabInstance:
     - target: {fileID: 198533276141313876, guid: e55149ba6f4d00741984987e258c3378,
         type: 3}
       propertyPath: CustomDataModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199176809758892682, guid: e55149ba6f4d00741984987e258c3378,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3921,11 +3921,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 199176809758892682, guid: e55149ba6f4d00741984987e258c3378,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 198533276141313876, guid: e55149ba6f4d00741984987e258c3378,
         type: 3}
       propertyPath: EmissionModule.enabled
@@ -3949,6 +3944,11 @@ PrefabInstance:
     - target: {fileID: 198533276141313876, guid: e55149ba6f4d00741984987e258c3378,
         type: 3}
       propertyPath: CustomDataModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199176809758892682, guid: e55149ba6f4d00741984987e258c3378,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4055,11 +4055,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 199176809758892682, guid: e55149ba6f4d00741984987e258c3378,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 198533276141313876, guid: e55149ba6f4d00741984987e258c3378,
         type: 3}
       propertyPath: EmissionModule.enabled
@@ -4083,6 +4078,11 @@ PrefabInstance:
     - target: {fileID: 198533276141313876, guid: e55149ba6f4d00741984987e258c3378,
         type: 3}
       propertyPath: CustomDataModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199176809758892682, guid: e55149ba6f4d00741984987e258c3378,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

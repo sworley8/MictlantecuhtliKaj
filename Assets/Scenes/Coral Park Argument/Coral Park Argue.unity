@@ -11326,6 +11326,11 @@ PrefabInstance:
       propertyPath: cutsceneEngine
       value: 
       objectReference: {fileID: 1696954416}
+    - target: {fileID: 3213676428428169373, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: isWaitForDialogue
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: voiceClip
@@ -11375,21 +11380,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d,
         type: 3}
-    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: voiceClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 8b0c072d91d704a9c8b5afa3b40eba04, type: 3}
-    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: voiceClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 51a04a9f5584d4537804868a8165e410, type: 3}
-    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: voiceClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 815b148253b2e47879c57bdba6d55f1d, type: 3}
     - target: {fileID: 3213676428428169374, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11607,6 +11597,21 @@ PrefabInstance:
       propertyPath: dialogue
       value: 'I think I know a guy who can help me. '
       objectReference: {fileID: 0}
+    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8b0c072d91d704a9c8b5afa3b40eba04, type: 3}
+    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 51a04a9f5584d4537804868a8165e410, type: 3}
+    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 815b148253b2e47879c57bdba6d55f1d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de0107726c5934efa9ccf089ec5c3f6d, type: 3}
 --- !u!4 &1304439763 stripped
@@ -19992,6 +19997,90 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb25abbf58df22143be242929848e150, type: 3}
+--- !u!1001 &1330152968747894951
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1393545232559577621, guid: 2bff7c361ebe34b8e8cd7f677c362aec,
+        type: 3}
+      propertyPath: m_Name
+      value: TimelineSceneChangerStatic
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704632013810207152, guid: 2bff7c361ebe34b8e8cd7f677c362aec,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.831448
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704632013810207152, guid: 2bff7c361ebe34b8e8cd7f677c362aec,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.458376
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704632013810207152, guid: 2bff7c361ebe34b8e8cd7f677c362aec,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 37.027184
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704632013810207152, guid: 2bff7c361ebe34b8e8cd7f677c362aec,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704632013810207152, guid: 2bff7c361ebe34b8e8cd7f677c362aec,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704632013810207152, guid: 2bff7c361ebe34b8e8cd7f677c362aec,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704632013810207152, guid: 2bff7c361ebe34b8e8cd7f677c362aec,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704632013810207152, guid: 2bff7c361ebe34b8e8cd7f677c362aec,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704632013810207152, guid: 2bff7c361ebe34b8e8cd7f677c362aec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704632013810207152, guid: 2bff7c361ebe34b8e8cd7f677c362aec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704632013810207152, guid: 2bff7c361ebe34b8e8cd7f677c362aec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1330152967873125566, guid: 2bff7c361ebe34b8e8cd7f677c362aec,
+        type: 3}
+      propertyPath: di
+      value: 
+      objectReference: {fileID: 1065686361}
+    - target: {fileID: 1330152967873125566, guid: 2bff7c361ebe34b8e8cd7f677c362aec,
+        type: 3}
+      propertyPath: timey
+      value: 
+      objectReference: {fileID: 1696954416}
+    - target: {fileID: 1330152967873125566, guid: 2bff7c361ebe34b8e8cd7f677c362aec,
+        type: 3}
+      propertyPath: SceneNumber
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2bff7c361ebe34b8e8cd7f677c362aec, type: 3}
 --- !u!65 &1642064441025137232
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20060,7 +20149,7 @@ PrefabInstance:
     - target: {fileID: 2637723716124167860, guid: 747c2bdc43faa574fb8162d9e0c75dc1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2637723716124167860, guid: 747c2bdc43faa574fb8162d9e0c75dc1,
         type: 3}

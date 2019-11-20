@@ -9,17 +9,17 @@ public class PlayGame : MonoBehaviour
     GameObject backgroundImage;
     public void playKaj()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(13);
 
     }
     public void menuKaj()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
 
     }
     public void creditKaj()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
     public void quitKaj()
     {

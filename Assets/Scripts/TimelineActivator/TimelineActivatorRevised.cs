@@ -6,7 +6,7 @@ using UnityEngine.Playables;
 public class TimelineActivatorRevised : MonoBehaviour
 {
     public List<PlayableDirector> listOfCutscenes;
-    public int activationCount;
+    public int activationCount = 0;
     int ctr = 0;
     private bool isNextSceneReady = false;
     //public AudioSource voiceAS;
@@ -20,8 +20,12 @@ public class TimelineActivatorRevised : MonoBehaviour
             {
                 activateTimeline(listOfCutscenes[ctr]);
                 ctr++;
+                activationCount++;
             }
             isNextSceneReady = false;
+      
+
+
         }
     }
 

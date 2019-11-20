@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CutsceneChange : MonoBehaviour
+
+public class CutsceneStaticChange : MonoBehaviour
 {
     public int SceneNumber;
     public DialogueEngine di;
-    public TimelineActivatorRevised timey;
     float timer;
     Boolean timerReached;
     // Start is called before the first frame update
@@ -20,12 +20,12 @@ public class CutsceneChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!di.dialogueIsActive && timey.activationCount == timey.listOfCutscenes.Count)
+        if (!di.dialogueIsActive)
         {
             if (!timerReached)
                 timer += Time.deltaTime;
 
-            if (!timerReached && timer > 4)
+            if (!timerReached && timer > 1)
             {
                 Debug.Log("Done waiting");
                 SceneManager.LoadScene(SceneNumber);
@@ -36,4 +36,5 @@ public class CutsceneChange : MonoBehaviour
         }
 
     }
+
 }
