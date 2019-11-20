@@ -10,7 +10,7 @@ public class TimelineActivator : MonoBehaviour
     public DialogueEngine dialogueEngine;
     public int activationCount;
     public int ctr = 0;//because time is short
-    public AudioSource voiceAS;
+    //public AudioSource voiceAS;
     public DialogueEngine dialogue;
     private void Update()
     {

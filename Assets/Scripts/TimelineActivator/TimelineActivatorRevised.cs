@@ -9,14 +9,14 @@ public class TimelineActivatorRevised : MonoBehaviour
     public int activationCount;
     int ctr = 0;
     private bool isNextSceneReady = false;
-    public AudioSource voiceAS;
+    //public AudioSource voiceAS;
 
 
     private void Update()
     {
         if (isNextSceneReady)
         {
-            if (ctr < listOfCutscenes.Count && !voiceAS.isPlaying)
+            if (ctr < listOfCutscenes.Count)
             {
                 activateTimeline(listOfCutscenes[ctr]);
                 ctr++;
