@@ -22,6 +22,7 @@ public class DialogueEngine : MonoBehaviour
     public AudioSource voiceAS;
 
     public bool isEnded = false;
+    public TimelineActivatorRevised cutsceneEngine;
 
     void Start()
     {
@@ -40,9 +41,11 @@ public class DialogueEngine : MonoBehaviour
             nextDialogue();
             dialogueIsActive = true;
             dialogueTrigger = false;
+            cutsceneEngine.activateNextCutscene();
         } else if (currentDialogue > 0 && Input.GetButtonDown("Fire1") && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count && !voiceAS.isPlaying)
         {
             nextDialogue();
+            cutsceneEngine.activateNextCutscene();
         }
 
         else if (Input.GetButtonDown("Fire1") && currentDialogue >= currentScript.Count && !voiceAS.isPlaying)
@@ -61,6 +64,7 @@ public class DialogueEngine : MonoBehaviour
             }
             dialogueIsActive = false;
             isEnded = true;
+            cutsceneEngine.activateNextCutscene();
         }
         
     }

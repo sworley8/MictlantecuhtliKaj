@@ -6,29 +6,40 @@ using UnityEngine.Playables;
 
 public class TimelineActivator : MonoBehaviour
 {
-    public List<PlayableDirector> timeline;//scalability for the possible future
+    public List<PlayableDirector> playableDirector;//scalability for the possible future NOTE- this script currently only supports two timelines
     public DialogueEngine dialogueEngine;
     public int activationCount;
-    int ctr = 0;//because time is short
+    public int ctr = 0;//because time is short
     private void Update()
-    { 
+    {
+        TimelineControl();
+    }
+
+    private void TimelineControl()
+    {
         int i = 0;
-        if(Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             ctr++;
         }
-        if(ctr>= activationCount)
+        if (ctr >= activationCount)
         {
-            activateTimeline(timeline[i]);//this is where the scalability breaks down
+            activateTimeline(playableDirector[i]);//this is where the scalability breaks down 
         }
-        else if (dialogueEngine.isEnded)
+        if (dialogueEngine.isEnded)
         {
-            activateTimeline(timeline[i+1]);//need a better way of doing this
+            deactivateTimeline(playableDirector[i]);
+            activateTimeline(playableDirector[i + 1]);//need a better way of doing this
         }
     }
 
-    private void activateTimeline(PlayableDirector timeline)
+    private void deactivateTimeline(PlayableDirector PD)
     {
-        timeline.Play();
+        PD.Pause();
+    }
+
+    private void activateTimeline(PlayableDirector PD)
+    {
+        PD.Play();
     }
 }
