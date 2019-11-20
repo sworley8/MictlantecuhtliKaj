@@ -43,12 +43,12 @@ public class DialogueEngine : MonoBehaviour
             dialogueIsActive = true;
             dialogueTrigger = false;
             doneTalking = true;
-            //cutsceneEngine.activateNextCutscene();
+            cutsceneEngine.activateNextCutscene();
         } else if (currentDialogue > 0 && Input.GetButtonDown("Fire1") && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count && !voiceAS.isPlaying)
         {
             nextDialogue();
             doneTalking = true;
-            //cutsceneEngine.activateNextCutscene();
+            cutsceneEngine.activateNextCutscene();
         }
 
         else if (Input.GetButtonDown("Fire1") && currentDialogue >= currentScript.Count && !voiceAS.isPlaying)
@@ -67,7 +67,7 @@ public class DialogueEngine : MonoBehaviour
             }
             dialogueIsActive = false;
             isEnded = true;
-            //cutsceneEngine.activateNextCutscene();
+            cutsceneEngine.activateNextCutscene();
         }
         
     }
