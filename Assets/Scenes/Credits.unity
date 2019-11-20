@@ -245,8 +245,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 329, y: -688}
-  m_SizeDelta: {x: 658, y: 1749}
+  m_AnchoredPosition: {x: 329, y: -714}
+  m_SizeDelta: {x: 658, y: 1800.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &107438747
 MonoBehaviour:
@@ -285,10 +285,10 @@ MonoBehaviour:
     Andrew Han\n Sophia Worley\n\n Anuraj Bhatnagar\n\n Anuraj Bhatnagar\n Jen Hom\n\n
     Sophia Worley\n\n Miranda Bisson\n Nandan Gouri\n\n\n\n Brad Baker\n\n Noura El
     Bayrouti\n\n Brandon Shockley\n\n Yoko Sarah Nakama Wong\n\n Addie Murphy\n\n
-    Tanya Churaman\n\n\n\n Humming the Beat\n Sophia Worley (Sample from )\n Karina
-    Mandock & Yoko Sarah Nakama Wong\n\n Symphony 11 Tocsin\n     (Allegro Non Troppo)
-    \n Shostakovich\n\n Cello Concerto No. 1 in E flat major,\n     Op. 107: Allegretto\n
-    Shostakovich\n\n :)"
+    Tanya Churaman\n\n\n\n Humming the Beat\n Sophia Worley\n Karina Mandock \n &
+    Yoko Sarah Nakama Wong\n\n Symphony 11 Tocsin\n     (Allegro Non Troppo) \n Shostakovich\n\n
+    Cello Concerto No. 1 in E flat major,\n     Op. 107: Allegretto\n Shostakovich\n\n
+    :)"
 --- !u!222 &107438748
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -417,8 +417,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -158, y: -688}
-  m_SizeDelta: {x: 315, y: 1748}
+  m_AnchoredPosition: {x: -158, y: -714}
+  m_SizeDelta: {x: 315, y: 1799.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &130599018
 MonoBehaviour:
@@ -455,7 +455,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Team Leads\n\n     \n3d Modelers\n\n\nProgrammers\n\n\n\nLevel Designer\n\nWriters\n\n\nSFX\n\nArtist\n\n\nVoice
     Actors          \n\nMictlantecuhtli Kaj\n\nSana Socks\n\nTed Kaj\n\nThe Devil\n\nTurk\n\nDuke\n\nMusic\n\nTitle
-    Song\nProduced By\nPerformed By\n\nLevel 1 Song\n\nWritten By\n\nLevel 2 Song\n\nWritten
+    Song\nProduced By\nPerformed By\n\n\nLevel 1 Song\n\nWritten By\n\nLevel 2 Song\n\nWritten
     By\n\nSpecial Thanks To VGDEV "
 --- !u!222 &130599019
 CanvasRenderer:
@@ -537,6 +537,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398396783}
   m_CullTransparentMesh: 0
+--- !u!1 &445845388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 445845390}
+  - component: {fileID: 445845389}
+  m_Layer: 0
+  m_Name: Song
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &445845389
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445845388}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7821584783686456465, guid: 26fe41360c3214db4b55f43ba63cdc62,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 22a618616f93342678863ea7da997f9c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &445845390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445845388}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1626.1414, y: 108.11388, z: 1809.311}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &485148911
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,7 +1012,7 @@ PrefabInstance:
     - target: {fileID: 253206290092702871, guid: 0d6a18414ad1f4c9cb2050f382601965,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1950
+      value: -2002
       objectReference: {fileID: 0}
     - target: {fileID: 253206290092702871, guid: 0d6a18414ad1f4c9cb2050f382601965,
         type: 3}

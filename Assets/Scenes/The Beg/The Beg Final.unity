@@ -6626,7 +6626,8 @@ AudioSource:
   m_GameObject: {fileID: 413032356}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7799814524369601292, guid: 26fe41360c3214db4b55f43ba63cdc62,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: fe45f2a12407340a5838837e4ced16d7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -16050,6 +16051,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimelineSceneChangerWithPlayable
       objectReference: {fileID: 0}
+    - target: {fileID: 7670491001183680241, guid: 1f9f11bc406e0ca429ae1edaaed4f63e,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[1].value
+      value: 
+      objectReference: {fileID: 613058731}
     - target: {fileID: 3885271692488918255, guid: 1f9f11bc406e0ca429ae1edaaed4f63e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16110,11 +16116,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7670491001183680241, guid: 1f9f11bc406e0ca429ae1edaaed4f63e,
-        type: 3}
-      propertyPath: m_SceneBindings.Array.data[1].value
-      value: 
-      objectReference: {fileID: 613058731}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f9f11bc406e0ca429ae1edaaed4f63e, type: 3}
 --- !u!1001 &1473686471
