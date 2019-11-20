@@ -8549,7 +8549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 823646726}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Sana And Kaj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17370,6 +17370,11 @@ PrefabInstance:
       propertyPath: voiceClip
       value: 
       objectReference: {fileID: 8300000, guid: 80c2fec3cdc0943eb87b66c9348c04e6, type: 3}
+    - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speaker
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3213676428409007166, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: speakerName
@@ -17506,6 +17511,11 @@ PrefabInstance:
       propertyPath: voiceClip
       value: 
       objectReference: {fileID: 8300000, guid: a72780a8dd0378b40b918ec2dd64dbf7, type: 3}
+    - target: {fileID: 3213676428015482024, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speaker
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3213676428150077837, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: image2
