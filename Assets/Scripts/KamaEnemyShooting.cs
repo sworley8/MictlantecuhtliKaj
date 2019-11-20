@@ -108,6 +108,7 @@ public class KamaEnemyShooting : MonoBehaviour
     void OnTriggerEnter(Collider collision)
     {
         float distanceToPlayer = Vector3.Distance(collision.transform.position, transform.position);
+        Debug.Log(distanceToPlayer);
         if (collision.transform.tag == "EnemyActivation" && distanceToPlayer > minDistanceToStartShooting)
         {
             player = collision.transform;
