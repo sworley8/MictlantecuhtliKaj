@@ -24,7 +24,6 @@ public class TimelineActivator : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && dialogue.dialogueIsActive)
         {
             ctr++;
-            Debug.Log(dialogue.doneTalking);
         }
         if (ctr >= activationCount)
         {

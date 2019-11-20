@@ -52,7 +52,7 @@ public class DialogueEngine : MonoBehaviour
             dialogueIsActive = true;
             dialogueTrigger = false;
             cutsceneEngine.activateNextCutscene();
-        } else if (currentDialogue > 0 && Input.GetButtonDown("Fire1") && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count && !voiceAS.isPlaying)
+        } else if (currentDialogue > 0 && Input.GetButtonDown("Fire1") && currentDialogue < currentScript.Count && currentScriptNum < Scripts.Count && dialogueWait)
         {
             nextDialogue();
             cutsceneEngine.activateNextCutscene();
