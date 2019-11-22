@@ -78,7 +78,7 @@ public class KamaEnemyShooting : MonoBehaviour
     {
         GameObject laser3 = GameObject.Instantiate(m_shotPrefab, gunNozzle3.position, gunNozzle3.rotation) as GameObject;
         GameObject laser4 = GameObject.Instantiate(m_shotPrefab, gunNozzle4.position, gunNozzle4.rotation) as GameObject;
-        shoot.Play();
+        //shoot.Play();
         GameObject.Destroy(laser3, 3f);
         GameObject.Destroy(laser4, 3f);
         //shots = true;
