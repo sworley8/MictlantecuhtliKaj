@@ -1541,7 +1541,7 @@ PrefabInstance:
     - target: {fileID: 3213676428428169373, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: isWaitForDialogue
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
@@ -1880,6 +1880,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: bd54312fd1965494db5b40ef4e2e770d,
         type: 3}
+    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speakerName
+      value: Turk
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de0107726c5934efa9ccf089ec5c3f6d, type: 3}
 --- !u!1 &199669525
@@ -15348,6 +15353,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 11.628
       objectReference: {fileID: 0}
+    - target: {fileID: 7563854551274080977, guid: d48ed5635d00c994b8a63acda61b8ab6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7563854551791604714, guid: d48ed5635d00c994b8a63acda61b8ab6,
         type: 3}
       propertyPath: m_IsActive
@@ -15366,11 +15376,6 @@ PrefabInstance:
     - target: {fileID: 7563854550929650341, guid: d48ed5635d00c994b8a63acda61b8ab6,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7563854551274080977, guid: d48ed5635d00c994b8a63acda61b8ab6,
-        type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7563854552388848361, guid: d48ed5635d00c994b8a63acda61b8ab6,
@@ -21244,6 +21249,11 @@ PrefabInstance:
         type: 3}
       propertyPath: SceneNumber
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899551139738949890, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: transitionTime
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 322bb6d3986f149448a1e601cfa68205, type: 3}

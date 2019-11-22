@@ -11,6 +11,7 @@ public class CutsceneChange : MonoBehaviour
     public TimelineActivatorRevised timey;
     float timer;
     Boolean timerReached;
+    public int transitionTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,7 @@ public class CutsceneChange : MonoBehaviour
             if (!timerReached)
                 timer += Time.deltaTime;
 
-            if (!timerReached && timer > 4)
+            if (!timerReached && timer > transitionTime)
             {
                 Debug.Log("Done waiting");
                 SceneManager.LoadScene(SceneNumber);

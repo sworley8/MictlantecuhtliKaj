@@ -1608,7 +1608,7 @@ PrefabInstance:
     - target: {fileID: 3213676428428169373, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: isWaitForDialogue
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
@@ -15024,6 +15024,11 @@ PrefabInstance:
         type: 3}
       propertyPath: SceneNumber
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899551139738949890, guid: 322bb6d3986f149448a1e601cfa68205,
+        type: 3}
+      propertyPath: transitionTime
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 322bb6d3986f149448a1e601cfa68205, type: 3}
