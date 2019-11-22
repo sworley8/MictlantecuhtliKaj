@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4d56866beb26e492eae29c49457270be
+guid: ab0f5fc277086594da508c10bfe6028a
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
@@ -24,11 +24,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: MouthMaterial
     second: {fileID: 2100000, guid: 5596afd68bff74d1fab0d26f8c54423d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: None
-    second: {fileID: 2100000, guid: 333fb544953a943fd8f6612911883b3e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
