@@ -11,8 +11,6 @@ public class KamaEnemyShooting : MonoBehaviour
     public float enemyRange = 2f;
     public float targetStart = 2f;
     public float targetEnd = 0f;
-    private Transform kamaEnemy;
-    private PlayerHealth ph;
     public Transform gunNozzle3;
     public Transform gunNozzle4;
     public GameObject m_shotPrefab;
@@ -27,6 +25,8 @@ public class KamaEnemyShooting : MonoBehaviour
     private Vector3 prevPlayerPos;
     public float rotationSpeed;
     public Vector3 lazerOffset;
+    //public AudioSource shoot;
+    //public GameObject puff;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +57,7 @@ public class KamaEnemyShooting : MonoBehaviour
                 reloadTime -= Time.deltaTime;
                 if (reloadTime <= 0f)
                 {
+
                     Shootings();
                     reloadTime = 0.2f;
                     targetStart = 2f;
@@ -77,6 +78,7 @@ public class KamaEnemyShooting : MonoBehaviour
     {
         GameObject laser3 = GameObject.Instantiate(m_shotPrefab, gunNozzle3.position, gunNozzle3.rotation) as GameObject;
         GameObject laser4 = GameObject.Instantiate(m_shotPrefab, gunNozzle4.position, gunNozzle4.rotation) as GameObject;
+        shoot.Play();
         GameObject.Destroy(laser3, 3f);
         GameObject.Destroy(laser4, 3f);
         //shots = true;

@@ -24,10 +24,10 @@ public class EnemyApproch : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Space))
-		{
-			StartCoroutine(coRoutineExclaim(0.5f));
-		}
+		//if (Input.GetKeyDown(KeyCode.Space))
+		//{
+		//	StartCoroutine(coRoutineExclaim(0.5f));
+		//}
 
         //if (EnemyCollision.checkIn == true && flagIn)
         //{
