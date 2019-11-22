@@ -84,6 +84,7 @@ public class DialogueEngine : MonoBehaviour
                 currentScript = Scripts[currentScriptNum].Script;
             }
             dialogueIsActive = false;
+            voiceAS.Pause();
             isEnded = true;
             cutsceneEngine.activateNextCutscene();
         }

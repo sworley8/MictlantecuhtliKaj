@@ -1512,6 +1512,12 @@ Terrain:
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
   m_AllowAutoConnect: 1
+--- !u!1 &53499344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2135368021}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &54404765 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: fb25abbf58df22143be242929848e150,
@@ -3556,10 +3562,25 @@ PrefabInstance:
       propertyPath: lazerOffset.x
       value: -15
       objectReference: {fileID: 0}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: shoot
+      value: 
+      objectReference: {fileID: 1286029993}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: puff
+      value: 
+      objectReference: {fileID: 887015227}
     - target: {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4,
         type: 3}
       propertyPath: tweens.Array.data[0]._bezierCurve
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: m_Name
+      value: ppdefault
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4, type: 3}
@@ -4292,6 +4313,12 @@ Transform:
   m_Father: {fileID: 1812398974}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &220147134 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+    type: 3}
+  m_PrefabInstance: {fileID: 764705567}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &220864442
 GameObject:
   m_ObjectHideFlags: 0
@@ -6561,10 +6588,25 @@ PrefabInstance:
       propertyPath: lazerOffset.x
       value: -10
       objectReference: {fileID: 0}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: shoot
+      value: 
+      objectReference: {fileID: 67214743}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: puff
+      value: 
+      objectReference: {fileID: 964663157}
     - target: {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4,
         type: 3}
       propertyPath: tweens.Array.data[0]._bezierCurve
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: m_Name
+      value: pdefault
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4, type: 3}
@@ -11680,6 +11722,12 @@ Terrain:
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
   m_AllowAutoConnect: 1
+--- !u!1 &611510635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1811096030}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &614586729 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 438712, guid: e7da835f6bce0494190e8bded912ae50,
@@ -12414,6 +12462,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2568050375394626179, guid: 3e42e042f52231843a270a3f74ee771a,
     type: 3}
   m_PrefabInstance: {fileID: 1499236228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &645241915 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1042332568}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &645979193
 PrefabInstance:
@@ -14395,10 +14449,25 @@ PrefabInstance:
       propertyPath: lazerOffset.y
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: shoot
+      value: 
+      objectReference: {fileID: 965223418}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: puff
+      value: 
+      objectReference: {fileID: 220147134}
     - target: {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4,
         type: 3}
       propertyPath: tweens.Array.data[0]._bezierCurve
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: m_Name
+      value: ppdefault
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4, type: 3}
@@ -16016,6 +16085,12 @@ Terrain:
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
   m_AllowAutoConnect: 1
+--- !u!1 &837498384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1933426069}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &837590581
 GameObject:
   m_ObjectHideFlags: 0
@@ -16742,6 +16817,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7da835f6bce0494190e8bded912ae50, type: 3}
+--- !u!1 &887015227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+    type: 3}
+  m_PrefabInstance: {fileID: 168082481}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &889107710 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 6073e918a6469d944946a0a8a8b6ce84,
@@ -17857,6 +17938,12 @@ MonoBehaviour:
   m_isAutoRotate: 1
   m_isClose: 0
   m_isAuto: 0
+--- !u!1 &955626964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1863809620}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &957177884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18064,6 +18151,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6073e918a6469d944946a0a8a8b6ce84, type: 3}
+--- !u!1 &964663157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+    type: 3}
+  m_PrefabInstance: {fileID: 343051937}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &965223416 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4703222403143491369, guid: 38a55c6eea5ce1043a64b709bd693ec4,
@@ -18507,7 +18600,7 @@ MonoBehaviour:
   totalPauseTime: 0
   totalUnscaledPauseTime: 0
   startValue: 0
-  _previewValue: 0
+  _previewValue: 0.02
   tweens:
   - _tweenType: 6
     _isSelf: 1
@@ -19588,10 +19681,25 @@ PrefabInstance:
       propertyPath: lazerOffset.y
       value: -15
       objectReference: {fileID: 0}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: shoot
+      value: 
+      objectReference: {fileID: 1153337547}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: puff
+      value: 
+      objectReference: {fileID: 645241915}
     - target: {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4,
         type: 3}
       propertyPath: tweens.Array.data[0]._bezierCurve
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: m_Name
+      value: pdefault
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4, type: 3}
@@ -20775,6 +20883,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 6073e918a6469d944946a0a8a8b6ce84,
     type: 3}
   m_PrefabInstance: {fileID: 107727410}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1099564015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1771809167}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1102031890
 PrefabInstance:
@@ -26919,10 +27033,25 @@ PrefabInstance:
       propertyPath: lazerOffset.x
       value: -10
       objectReference: {fileID: 0}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: shoot
+      value: 
+      objectReference: {fileID: 848457148}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: puff
+      value: 
+      objectReference: {fileID: 1732078785}
     - target: {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4,
         type: 3}
       propertyPath: tweens.Array.data[0]._bezierCurve
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: m_Name
+      value: ppdefault
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4, type: 3}
@@ -29009,10 +29138,25 @@ PrefabInstance:
       propertyPath: lazerOffset.x
       value: -10
       objectReference: {fileID: 0}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: shoot
+      value: 
+      objectReference: {fileID: 654701459}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: puff
+      value: 
+      objectReference: {fileID: 1934264279}
     - target: {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4,
         type: 3}
       propertyPath: tweens.Array.data[0]._bezierCurve
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: m_Name
+      value: ppdefault
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4, type: 3}
@@ -29770,7 +29914,7 @@ PrefabInstance:
     - target: {fileID: 9104101191363812316, guid: d48ed5635d00c994b8a63acda61b8ab6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1626
+      value: 1625.6819
       objectReference: {fileID: 0}
     - target: {fileID: 9104101191363812316, guid: d48ed5635d00c994b8a63acda61b8ab6,
         type: 3}
@@ -29780,27 +29924,27 @@ PrefabInstance:
     - target: {fileID: 9104101191363812316, guid: d48ed5635d00c994b8a63acda61b8ab6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1809
+      value: 1788.6215
       objectReference: {fileID: 0}
     - target: {fileID: 9104101191363812316, guid: d48ed5635d00c994b8a63acda61b8ab6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.000000057287444
       objectReference: {fileID: 0}
     - target: {fileID: 9104101191363812316, guid: d48ed5635d00c994b8a63acda61b8ab6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.999879
       objectReference: {fileID: 0}
     - target: {fileID: 9104101191363812316, guid: d48ed5635d00c994b8a63acda61b8ab6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.0000036820436
       objectReference: {fileID: 0}
     - target: {fileID: 9104101191363812316, guid: d48ed5635d00c994b8a63acda61b8ab6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.015556717
       objectReference: {fileID: 0}
     - target: {fileID: 9104101191363812316, guid: d48ed5635d00c994b8a63acda61b8ab6,
         type: 3}
@@ -33529,6 +33673,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1106970521}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1732078785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1383736230}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1732351905 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 6073e918a6469d944946a0a8a8b6ce84,
@@ -34299,10 +34449,25 @@ PrefabInstance:
       propertyPath: lazerOffset.x
       value: -15
       objectReference: {fileID: 0}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: shoot
+      value: 
+      objectReference: {fileID: 393189016}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: puff
+      value: 
+      objectReference: {fileID: 1099564015}
     - target: {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4,
         type: 3}
       propertyPath: tweens.Array.data[0]._bezierCurve
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: m_Name
+      value: pdefault
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4, type: 3}
@@ -35070,10 +35235,25 @@ PrefabInstance:
       propertyPath: lazerOffset.x
       value: -10
       objectReference: {fileID: 0}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: shoot
+      value: 
+      objectReference: {fileID: 1533292608}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: puff
+      value: 
+      objectReference: {fileID: 611510635}
     - target: {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4,
         type: 3}
       propertyPath: tweens.Array.data[0]._bezierCurve
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: m_Name
+      value: pdefault
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4, type: 3}
@@ -36251,10 +36431,25 @@ PrefabInstance:
       propertyPath: lazerOffset.x
       value: -10
       objectReference: {fileID: 0}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: shoot
+      value: 
+      objectReference: {fileID: 1499415784}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: puff
+      value: 
+      objectReference: {fileID: 955626964}
     - target: {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4,
         type: 3}
       propertyPath: tweens.Array.data[0]._bezierCurve
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: m_Name
+      value: ppdefault
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4, type: 3}
@@ -37997,14 +38192,35 @@ PrefabInstance:
       propertyPath: lazerOffset.x
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: shoot
+      value: 
+      objectReference: {fileID: 85263355}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: puff
+      value: 
+      objectReference: {fileID: 837498384}
     - target: {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4,
         type: 3}
       propertyPath: tweens.Array.data[0]._bezierCurve
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: m_Name
+      value: ppdefault
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 38a55c6eea5ce1043a64b709bd693ec4, type: 3}
+--- !u!1 &1934264279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1501230279}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1937534797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41168,10 +41384,25 @@ PrefabInstance:
       propertyPath: lazerOffset.x
       value: -15
       objectReference: {fileID: 0}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: shoot
+      value: 
+      objectReference: {fileID: 1425757963}
+    - target: {fileID: 3631272171831765801, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: puff
+      value: 
+      objectReference: {fileID: 53499344}
     - target: {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4,
         type: 3}
       propertyPath: tweens.Array.data[0]._bezierCurve
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245660314947435188, guid: 38a55c6eea5ce1043a64b709bd693ec4,
+        type: 3}
+      propertyPath: m_Name
+      value: pdefault
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3631272171831765802, guid: 38a55c6eea5ce1043a64b709bd693ec4, type: 3}

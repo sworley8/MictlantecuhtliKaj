@@ -8,6 +8,7 @@ public class EnemyCollision : MonoBehaviour
     public static bool checkMi = false;
     public static bool checkOut = false;
     public Jun_TweenRuntime enemyBezierCurve;
+    public static int deaths;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,8 @@ public class EnemyCollision : MonoBehaviour
             //If the GameObject has the same tag as specified, output this message in the console
             //Debug.Log("Do something else here");
             gameObject.SetActive(false);
+            deaths++;
+
         }
         if (collision.gameObject.layer == 8)
         {

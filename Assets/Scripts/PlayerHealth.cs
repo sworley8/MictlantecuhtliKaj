@@ -62,7 +62,10 @@ public class PlayerHealth : MonoBehaviour
     }
     void Update()
     {
-
+        if (Input.GetKeyDown("f"))
+        {
+            handleHealth(10);
+        }
     }
 
     public int GetHealth()

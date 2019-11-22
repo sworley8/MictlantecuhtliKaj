@@ -63,6 +63,7 @@ public class KamaEnemyShooting : MonoBehaviour
             } else
             {
                 mats[0].color = Color.magenta;
+                Debug.Log(EnemyCollision.deaths);
             }
             if (targetStart <= targetEnd)
             {
