@@ -11,7 +11,6 @@ public class MissileEnemy : MonoBehaviour
 
     void Start()
     {
-        BeginMissileCountdown();
     }
 
     public void BeginMissileCountdown ()
@@ -41,4 +40,5 @@ public class MissileEnemy : MonoBehaviour
         missile1.FireMissile();
         missile2.FireMissile();
     }
+
 }
