@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level1Prototype (Experimental).unity
     guid: 17579f95f5cdb204392285b6be4915c8
   - enabled: 1
-    path: Assets/Scenes/Level2Prototype.unity
+    path: Assets/Scenes/Level2/Level2Prototype.unity
     guid: 7caa61f3e10a6444888b5a67ac153708
   - enabled: 1
     path: Assets/Scenes/BetweenLevels1/BetweenLevels1.unity
@@ -51,8 +51,8 @@ EditorBuildSettings:
     path: Assets/Scenes/GuideScreen.unity
     guid: 2c2456bb66a924eee935ec7da3a57aa6
   - enabled: 1
-    path: Assets/Scenes/Level2Prototype Changed.unity
-    guid: 94f700760ec2f41f0b7e31ab2dc07fbc
+    path: Assets/Scenes/Level2/Level2Prototype Experimental.unity
+    guid: 2ed84f50feab02b48918f2d5f297bf24
   - enabled: 1
     path: Assets/Scenes/BetweenLevels1/BetweenLevels2Argue.unity
     guid: 97f03c9296e4844d3bb40c3078fa819b

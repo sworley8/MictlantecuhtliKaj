@@ -1342,6 +1342,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1655033964}
+  - {fileID: 1959674901}
   - {fileID: 1960083853}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -10731,7 +10732,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1176655597
 Transform:
   m_ObjectHideFlags: 0
@@ -11316,6 +11317,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueSystem (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8b0c072d91d704a9c8b5afa3b40eba04, type: 3}
     - target: {fileID: 3213676428428169373, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: voiceAS
@@ -11331,55 +11337,16 @@ PrefabInstance:
       propertyPath: isWaitForDialogue
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
+    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: voiceClip
       value: 
-      objectReference: {fileID: 8300000, guid: 7848149f35e4149eb92f15081a2b6db0, type: 3}
-    - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speakerName
-      value: Mictlantecuhtli
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speaker
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: dialogue
-      value: But maybe if you had just let me come, the two of us could have protected
-        him or prevented him from being taken. Together!
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: image2
-      value: 
-      objectReference: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d,
-        type: 3}
-    - target: {fileID: 3213676428409007166, guid: de0107726c5934efa9ccf089ec5c3f6d,
+      objectReference: {fileID: 8300000, guid: 51a04a9f5584d4537804868a8165e410, type: 3}
+    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: voiceClip
       value: 
-      objectReference: {fileID: 8300000, guid: 7fbd427046fb64c57a6554aaa8108179, type: 3}
-    - target: {fileID: 3213676428409007166, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speakerName
-      value: Mictlantecuhtli
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676428409007166, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: dialogue
-      value: 'He''s just a young jellyfish! The mob will turn him into a chandelier!
-        They''ve done it before. Nothing will stop them now. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676428409007166, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: image2
-      value: 
-      objectReference: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d,
-        type: 3}
+      objectReference: {fileID: 8300000, guid: 815b148253b2e47879c57bdba6d55f1d, type: 3}
     - target: {fileID: 3213676428428169374, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11475,6 +11442,108 @@ PrefabInstance:
       propertyPath: Script.Array.data[3]
       value: 
       objectReference: {fileID: 1193281391}
+    - target: {fileID: 3213676427442711131, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d,
+        type: 3}
+    - target: {fileID: 3213676427442711131, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speakerName
+      value: Mictlantecuhtli
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676427442711131, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676427442711131, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: dialogue
+      value: 'How could you have let this happen? Why would anyone take our son? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676427442711131, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: efee4ffba4bc5456187aab9ed137107d, type: 3}
+    - target: {fileID: 3213676428015482024, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speakerName
+      value: Sana
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676428015482024, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676428015482024, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: dialogue
+      value: 'Are you blaming me now? I chased them, I called you, I called the police,
+        none of which were able to stop them. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676428015482024, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 81317bc2132b3c54aa2f9b70467aaf03, type: 3}
+    - target: {fileID: 3213676428015482024, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d,
+        type: 3}
+    - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7848149f35e4149eb92f15081a2b6db0, type: 3}
+    - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speakerName
+      value: Mictlantecuhtli
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: dialogue
+      value: But maybe if you had just let me come, the two of us could have protected
+        him or prevented him from being taken. Together!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676428325008432, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d,
+        type: 3}
+    - target: {fileID: 3213676428409007166, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7fbd427046fb64c57a6554aaa8108179, type: 3}
+    - target: {fileID: 3213676428409007166, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: speakerName
+      value: Mictlantecuhtli
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676428409007166, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: dialogue
+      value: 'He''s just a young jellyfish! The mob will turn him into a chandelier!
+        They''ve done it before. Nothing will stop them now. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213676428409007166, guid: de0107726c5934efa9ccf089ec5c3f6d,
+        type: 3}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d,
+        type: 3}
     - target: {fileID: 3213676428150077837, guid: de0107726c5934efa9ccf089ec5c3f6d,
         type: 3}
       propertyPath: voiceClip
@@ -11544,74 +11613,6 @@ PrefabInstance:
       propertyPath: dialogue
       value: 'I think I know a guy who can help me. '
       objectReference: {fileID: 0}
-    - target: {fileID: 3213676427354314313, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: voiceClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 8b0c072d91d704a9c8b5afa3b40eba04, type: 3}
-    - target: {fileID: 3213676427281308891, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: voiceClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 51a04a9f5584d4537804868a8165e410, type: 3}
-    - target: {fileID: 3213676429148202526, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: voiceClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 815b148253b2e47879c57bdba6d55f1d, type: 3}
-    - target: {fileID: 3213676427442711131, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: image2
-      value: 
-      objectReference: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d,
-        type: 3}
-    - target: {fileID: 3213676427442711131, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speakerName
-      value: Mictlantecuhtli
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676427442711131, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speaker
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676427442711131, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: dialogue
-      value: 'How could you have let this happen? Why would anyone take our son? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676427442711131, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: voiceClip
-      value: 
-      objectReference: {fileID: 8300000, guid: efee4ffba4bc5456187aab9ed137107d, type: 3}
-    - target: {fileID: 3213676428015482024, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speakerName
-      value: Sana
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676428015482024, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: speaker
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676428015482024, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: dialogue
-      value: 'Are you blaming me now? I chased them, I called you, I called the police,
-        none of which were able to stop them. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213676428015482024, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: voiceClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 81317bc2132b3c54aa2f9b70467aaf03, type: 3}
-    - target: {fileID: 3213676428015482024, guid: de0107726c5934efa9ccf089ec5c3f6d,
-        type: 3}
-      propertyPath: image2
-      value: 
-      objectReference: {fileID: 21300000, guid: 72317db0e94e55f4889205d4c60c1c1d,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de0107726c5934efa9ccf089ec5c3f6d, type: 3}
 --- !u!4 &1304439763 stripped
@@ -19236,6 +19237,96 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 893389705}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1959674900
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 383285458}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 000bebfe70d97394d99da8480e845927,
+        type: 3}
+      propertyPath: m_Name
+      value: Sharkmom
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 000bebfe70d97394d99da8480e845927,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 000bebfe70d97394d99da8480e845927,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.43905854
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 000bebfe70d97394d99da8480e845927,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.0334272
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 000bebfe70d97394d99da8480e845927,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.07793707
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 000bebfe70d97394d99da8480e845927,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 000bebfe70d97394d99da8480e845927,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 000bebfe70d97394d99da8480e845927,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.9969583
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 000bebfe70d97394d99da8480e845927,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 000bebfe70d97394d99da8480e845927,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 000bebfe70d97394d99da8480e845927,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 000bebfe70d97394d99da8480e845927,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 000bebfe70d97394d99da8480e845927,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 000bebfe70d97394d99da8480e845927,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 000bebfe70d97394d99da8480e845927,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 000bebfe70d97394d99da8480e845927, type: 3}
+--- !u!4 &1959674901 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 000bebfe70d97394d99da8480e845927,
+    type: 3}
+  m_PrefabInstance: {fileID: 1959674900}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1960083852
 GameObject:
   m_ObjectHideFlags: 0
@@ -19252,7 +19343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1960083853
 Transform:
   m_ObjectHideFlags: 0
@@ -19267,7 +19358,7 @@ Transform:
   - {fileID: 940056419}
   - {fileID: 1176655597}
   m_Father: {fileID: 383285458}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 8.94, y: 180, z: 0}
 --- !u!95 &1960083854
 Animator:

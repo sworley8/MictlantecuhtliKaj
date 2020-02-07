@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyCollision : MonoBehaviour
 {
+    public bool movementActivated = false;
     public static bool checkIn = false;
     public static bool checkMi = false;
     public static bool checkOut = false;
@@ -12,11 +13,7 @@ public class EnemyCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        enemyBezierCurve = GetComponent<Jun_TweenRuntime>();
-        if (enemyBezierCurve != null)
-        {
-            enemyBezierCurve.Pause();
-        }
+        Init();
     }
 
     // Update is called once per frame
@@ -29,7 +26,8 @@ public class EnemyCollision : MonoBehaviour
         //Debug.Log("Do something else here11");
         if (collision.gameObject.tag == "EnemyActivation" && enemyBezierCurve != null)
         {
-            Debug.Log("ACTIVATED: " + gameObject.name);
+            movementActivated = true;
+            Debug.Log("ACTIVATED: ////////////////////////////////////////////" + gameObject.name);
             enemyBezierCurve.Resume();
 
         }
@@ -52,6 +50,15 @@ public class EnemyCollision : MonoBehaviour
             //Debug.Log("Do something else here66");
             checkMi = true;
             Debug.Log("Exclamation");
+        }
+    }
+
+    public void Init()
+    {
+        enemyBezierCurve = GetComponent<Jun_TweenRuntime>();
+        if (enemyBezierCurve != null)
+        {
+            enemyBezierCurve.Pause();
         }
     }
 }

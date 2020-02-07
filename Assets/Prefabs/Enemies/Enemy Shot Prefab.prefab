@@ -140,4 +140,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46201cf4d6f3e48249e04700dcec3888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementActivated: 0
   enemyBezierCurve: {fileID: 0}
